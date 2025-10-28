@@ -1,0 +1,25 @@
+{
+  "title": "Dictées des 4 semaines",
+  "weeks": [
+    {
+      "id": "semaine1",
+      "title": "Semaine 1",
+      "words": ["maison", "chien", "école", "famille", "livre"]
+    },
+    {
+      "id": "semaine2",
+      "title": "Semaine 2",
+      "words": ["voiture", "jardin", "pomme", "ordinateur", "stylo"]
+    },
+    {
+      "id": "semaine3",
+      "title": "Semaine 3",
+      "words": ["soleil", "lune", "étoile", "nuage", "pluie"]
+    },
+    {
+      "id": "semaine4",
+      "title": "Semaine 4",
+      "words": ["chat", "oiseau", "poisson", "lapin", "tortue"]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Activités de la semaine",
+  "sections": [
+    {
+      "id": "lecture",
+      "label": "Lecture compréhension",
+      "children": [
+        {
+          "id": "dromadaire",
+          "label": "Le dromadaire",
+          "folderName": "dromadaire",
+          "componentJson": "./dromadaire/tex1.json",
+          "quizJsonPath": "./dromadaire/question.json"
+        },
+        {
+          "id": "UneOrangePourSolane",
+          "label": "Une Orange Pour Solane",
+          "folderName": "UneOrangePourSolane",
+          "componentJson": "./UneOrangePourSolane/tex1.json",
+          "quizJsonPath": "./UneOrangePourSolane/question.json"
+        }
+      ]
+    },
+    {
+      "id": "histoire",
+      "label": "Histoire de la semaine",
+      "children": [
+    {
+      "id": "histoireInteractive",
+      "label": "Histoire",
+     "component": "HistoireSemaine"
+    }
+  ]
+      
+    },
+   {
+  "id": "dictee",
+  "label": "Dictée de la semaine",
+  "children": [
+    {
+      "id": "dicteeInteractive",
+      "label": "Voir la dictée",
+      "component": "DicteeInteractive"
+    }
+  ]
+}
+
+
+  ]
+}

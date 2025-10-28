@@ -1,0 +1,132 @@
+:root {
+  --orange: #15a278;
+  --green:#15a278;
+  --white: #ffffff;
+  --light-bg: #f8fafc;
+}
+
+/* === CONTAINER PRINCIPAL === */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* === SECTION ORANGE === */
+.orangeSection {
+  background-color: var(--orange);
+  color: var(--white);
+ 
+  text-align: center;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 25px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.features li {
+  font-size: 1rem;
+  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+
+.motivation {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+/* === SECTION VERTE === */
+.greenSection {
+  background-color: var(--light-bg);
+  padding: 60px 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: var(--green);
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* === CARTES DES NIVEAUX === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--white);
+  border: 3px solid transparent;
+  border-radius: 18px;
+  padding: 25px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: var(--green);
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--green);
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+  padding: 15px 10px;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  font-size: 2em;
+  font-weight: 500;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}

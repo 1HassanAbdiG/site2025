@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feuille d’avertissement – Bus Scolaire</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; background-color: #f8f9fa; }
+  h1 { text-align: center; color: #d9534f; }
+  label { font-weight: bold; }
+  .section { margin-bottom: 20px; }
+  input[type="text"], textarea { width: 100%; padding: 8px; margin-top: 5px; border-radius: 4px; border: 1px solid #ccc; }
+  .checkbox-group { margin-left: 20px; margin-top: 10px; }
+  .checkbox-group label { display: block; margin-bottom: 5px; font-weight: normal; }
+  .signature { margin-top: 30px; }
+  .signature label { display: inline-block; width: 200px; }
+  button { padding: 10px 20px; background-color: #d9534f; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+  button:hover { background-color: #c9302c; }
+</style>
+</head>
+<body>
+
+<h1>Feuille d’avertissement – Bus Scolaire</h1>
+
+<div class="section">
+  <label>École :</label>
+  <input type="text" placeholder="Nom de l'école">
+</div>
+
+<div class="section">
+  <label>Classe :</label>
+  <input type="text" placeholder="Classe de l'élève">
+</div>
+
+<div class="section">
+  <label>Nom de l’élève :</label>
+  <input type="text" placeholder="Nom complet de l'élève">
+</div>
+
+<div class="section">
+  <label>Date :</label>
+  <input type="text" placeholder="JJ/MM/AAAA">
+</div>
+
+<div class="section">
+  <label>Motif de l’avertissement :</label>
+  <div class="checkbox-group">
+    <label><input type="checkbox"> Ne pas attendre calmement le bus</label>
+    <label><input type="checkbox"> Monter dans le bus de manière dangereuse</label>
+    <label><input type="checkbox"> Se lever ou se déplacer alors que le bus roule</label>
+    <label><input type="checkbox"> Jouer ou crier dans le bus</label>
+    <label><input type="checkbox"> Sortir la tête ou les mains par la fenêtre</label>
+    <label><input type="checkbox"> Pousser ou bousculer les autres élèves</label>
+    <label><input type="checkbox"> Ne pas respecter le chauffeur ou le personnel</label>
+    <label><input type="checkbox"> Autre : <input type="text" placeholder="Préciser"></label>
+  </div>
+</div>
+
+<div class="section">
+  <label>Description de l’incident :</label>
+  <textarea rows="5" placeholder="Décrire ce qui s'est passé..."></textarea>
+</div>
+
+<div class="section">
+  <label>Consigne donnée à l’élève :</label>
+  <select="5" readonly>
+1. Respecter toutes les consignes de sécurité dans le bus
+2. Rester assis calmement pendant le trajet
+3. Respecter les autres élèves et le chauffeur
+4. Utiliser correctement les sorties et les équipements du bus
+5. Toute récidive pourra entraîner des mesures disciplinaires
+  </select>
+</div>
+
+<div class="signature">
+  <label>Signature du chauffeur / surveillant :</label>
+  <input type="text" placeholder="Nom et signature">
+</div>
+
+<div class="signature">
+  <label>Signature de l’élève :</label>
+  <input type="text" placeholder="Nom et signature">
+</div>
+
+<div style="text-align:center; margin-top:40px;">
+  <button onclick="window.print()">Imprimer / Enregistrer en PDF</button>
+</div>
+
+</body>
+</html>

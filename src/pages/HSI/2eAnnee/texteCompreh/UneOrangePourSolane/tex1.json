@@ -1,0 +1,24 @@
+{
+    "title": "Une orange pour Solange",
+    "grade": 2,
+    "sections": [
+        {
+            "title": "Une orange pour Solange",
+            "text": "Une orange pour Solange \nDes pommes de terre pour Robert \nDu chocolat pour Nicolas \nUne pomme pour cousin Tom",
+            "image": "1.png",
+            "audio": "1.mp3"
+        },
+        {
+            "title": "De belles roses pour Marie-Rose",
+            "text": "De belles roses pour Marie-Rose \nDe petites olives pour tante Olive \nUn gros fromage pour Natraj \nDes carottes pour Charlotte",
+            "image": "2.png",
+            "audio": "2.mp3"
+        },
+        {
+            "title": "De grosses tomates pour Agathe",
+            "text": "De grosses tomates pour Agathe \nUn rôti pour cousine Li \nUn cornet pour Gervais \nUn os pour Milos",
+            "image": "3.png",
+            "audio": "3.mp3"
+        }
+    ]
+}
