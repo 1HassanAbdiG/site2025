@@ -1,0 +1,44 @@
+{
+  "title": "Activités de la semaine",
+  "sections": [
+    {
+      "id": "lecture",
+      "label": "Lecture compréhension",
+      "children": [
+        {
+          "id": "Oiseau_blesse",
+          "label": "Le Oiseau_blesse",
+          "folderName": "Oiseau_blesse",
+          "componentJson": "./Oiseau_blesse/tex1.json",
+          "quizJsonPath": "./Oiseau_blesse/question.json"
+        }
+        
+      ]
+    },
+    {
+      "id": "histoire",
+      "label": "Histoire de la semaine",
+      "children": [
+    {
+      "id": "histoireInteractive",
+      "label": "Histoire",
+     "component": "HistoireSemaine"
+    }
+  ]
+      
+    },
+   {
+  "id": "dictee",
+  "label": "Dictée de la semaine",
+  "children": [
+    {
+      "id": "dicteeInteractive",
+      "label": "Voir la dictée",
+      "component": "DicteeInteractive"
+    }
+  ]
+}
+
+
+  ]
+}

@@ -55,7 +55,7 @@ const componentsMap = {
   HistoireSemaine: HistoireSemaine,
 };
 
-const WeeklyNavigator = () => {
+const WeeklyNavigator3 = () => {
   const [selected, setSelected] = useState(null);
   const [selectedChild, setSelectedChild] = useState(null);
   const [CurrentStory, setCurrentStory] = useState(null);
@@ -237,4 +237,4 @@ const WeeklyNavigator = () => {
   );
 };
 
-export default WeeklyNavigator;
+export default WeeklyNavigator3;

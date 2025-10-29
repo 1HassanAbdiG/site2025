@@ -1,0 +1,24 @@
+{
+    "title": "L'OISEAU BLESSÉ",
+    "grade": 3,
+    "sections": [
+      {
+        "title": "L'OISEAU BLESSÉ - Partie 1",
+        "text": "Justine retournait à la maison quand elle a vu un pigeon blessé.\n_Ses plumes étaient ébouriffées.\n_Il roucoulait tristement dans l'herbe. L'une de ses ailes était repliée.",
+        "image": "1.png",
+        "audio": "1.mp3"
+      },
+      {
+        "title": "L'OISEAU BLESSÉ - Partie 2",
+        "text": "Justine a cherché autour d'elle et a vu un nid tombé d'une branche.\n_Elle a pris l'oiseau avec ses deux mains et l'a nettoyé avec un papier mouchoir.\n_Son aile droite était cassée et il y avait un peu de sang sur ses pattes.",
+        "image": "2.png",
+        "audio": "2.mp3"
+      },
+      {
+        "title": "L'OISEAU BLESSÉ - Partie 3",
+        "text": "Elle a apporté l'oiseau à la maison, lui a donné des miettes de pain et de l'eau.\n_Avec de la patience, Justine a convaincu l'oiseau de manger.\n_Après une semaine, elle l'a relâché par la fenêtre.",
+        "image": "3.png",
+        "audio": "3.mp3"
+      }
+    ]
+  }

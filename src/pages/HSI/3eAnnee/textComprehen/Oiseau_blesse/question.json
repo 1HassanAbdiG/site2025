@@ -1,0 +1,129 @@
+{
+  "title": "L'OISEAU BLESSÉ",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "L'OISEAU BLESSÉ - Partie 1",
+      "text": "Justine retournait à la maison quand elle a vu un pigeon blessé.\n_Ses plumes étaient ébouriffées.\n_Il roucoulait tristement dans l'herbe. L'une de ses ailes était repliée.",
+      "questions": [
+        {
+          "question": "Qui Justine a-t-elle vu dans l'herbe ?",
+          "options": ["Un chat", "Un pigeon blessé", "Un chien"],
+          "correctAnswer": "Un pigeon blessé"
+        },
+        {
+          "question": "Comment étaient les plumes du pigeon ?",
+          "options": ["Lisses", "Colorées", "Ébouriffées"],
+          "correctAnswer": "Ébouriffées"
+        },
+        {
+          "question": "Que faisait le pigeon dans l'herbe ?",
+          "options": ["Il dormait", "Il roucoulait tristement", "Il volait"],
+          "correctAnswer": "Il roucoulait tristement"
+        },
+        {
+          "question": "Quelle aile du pigeon était repliée ?",
+          "options": ["Son aile droite", "On ne sait pas", "Son aile gauche"],
+          "correctAnswer": "On ne sait pas"
+        },
+        {
+          "question": "Où Justine allait-elle quand elle a trouvé le pigeon ?",
+          "options": ["Au parc", "À l'école", "À la maison"],
+          "correctAnswer": "À la maison"
+        }
+      ]
+    },
+    {
+      "title": "L'OISEAU BLESSÉ - Partie 2",
+      "text": "Justine a cherché autour d'elle et a vu un nid tombé d'une branche.\n_Elle a pris l'oiseau avec ses deux mains et l'a nettoyé avec un papier mouchoir.\n_Son aile droite était cassée et il y avait un peu de sang sur ses pattes.",
+      "questions": [
+        {
+          "question": "Qu'a vu Justine autour d'elle ?",
+          "options": ["Une pierre", "Un nid tombé d'une branche", "Un arbre"],
+          "correctAnswer": "Un nid tombé d'une branche"
+        },
+        {
+          "question": "Comment Justine a-t-elle pris l'oiseau ?",
+          "options": ["Avec un filet", "Avec ses deux mains", "Avec une boîte"],
+          "correctAnswer": "Avec ses deux mains"
+        },
+        {
+          "question": "Qu'a utilisé Justine pour nettoyer l'oiseau ?",
+          "options": ["Un chiffon", "Un papier mouchoir", "De l'eau"],
+          "correctAnswer": "Un papier mouchoir"
+        },
+        {
+          "question": "Quelle aile était cassée ?",
+          "options": ["Les deux ailes", "Son aile droite", "Son aile gauche"],
+          "correctAnswer": "Son aile droite"
+        },
+        {
+          "question": "Que faisait le sang mentionné dans le texte ?",
+          "options": ["Il y en avait partout", "Il y en avait un peu sur ses pattes", "Il n'y avait pas de sang"],
+          "correctAnswer": "Il y en avait un peu sur ses pattes"
+        }
+      ]
+    },
+    {
+      "title": "L'OISEAU BLESSÉ - Partie 3",
+      "text": "Elle a apporté l'oiseau à la maison, lui a donné des miettes de pain et de l'eau.\n_Avec de la patience, Justine a convaincu l'oiseau de manger.\n_Après une semaine, elle l'a relâché par la fenêtre.",
+      "questions": [
+        {
+          "question": "Que Justine a-t-elle donné à l'oiseau ?",
+          "options": ["Des graines de tournesol", "Du lait", "Des miettes de pain et de l'eau"],
+          "correctAnswer": "Des miettes de pain et de l'eau"
+        },
+        {
+          "question": "Comment Justine a-t-elle fait manger l'oiseau ?",
+          "options": ["En le forçant", "Avec de la patience", "En criant"],
+          "correctAnswer": "Avec de la patience"
+        },
+        {
+          "question": "Combien de temps avant que l'oiseau soit relâché ?",
+          "options": ["Un mois", "Une semaine", "Un jour"],
+          "correctAnswer": "Une semaine"
+        },
+        {
+          "question": "Où Justine a-t-elle relâché l'oiseau ?",
+          "options": ["Par la fenêtre", "Dans le parc", "Sur le toit"],
+          "correctAnswer": "Par la fenêtre"
+        },
+        {
+          "question": "Que montre l'histoire sur Justine ?",
+          "options": ["Elle est méchante", "Elle est gentille et patiente", "Elle est paresseuse"],
+          "correctAnswer": "Elle est gentille et patiente"
+        }
+      ]
+    }
+  ],
+  "finalQuiz": {
+    "title": "QCM Final",
+    "questions": [
+      {
+        "question": "Qui a trouvé l'oiseau ?",
+        "options": ["Camille", "Lily-Rose", "Justine"],
+        "correctAnswer": "Justine"
+      },
+      {
+        "question": "Quelle aile du pigeon était cassée ?",
+        "options": ["Son aile gauche", "Les deux ailes", "Son aile droite"],
+        "correctAnswer": "Son aile droite"
+      },
+      {
+        "question": "Que lui a donné Justine à manger ?",
+        "options": ["Du lait", "Des miettes de pain et de l'eau", "Des graines"],
+        "correctAnswer": "Des miettes de pain et de l'eau"
+      },
+      {
+        "question": "Comment Justine a-t-elle convaincu l'oiseau de manger ?",
+        "options": ["En criant", "Avec de la patience", "En le secouant"],
+        "correctAnswer": "Avec de la patience"
+      },
+      {
+        "question": "Que montre l'histoire sur Justine ?",
+        "options": ["Elle est paresseuse", "Elle est gentille et patiente", "Elle est méchante"],
+        "correctAnswer": "Elle est gentille et patiente"
+      }
+    ]
+  }
+}

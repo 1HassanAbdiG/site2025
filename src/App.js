@@ -8,6 +8,7 @@ import Accueil from './pages/Accueil';
 import Contact from './HeaderFooter/contact';
 import Activites from './pages/Annee/Activites';
 import WeeklyNavigator from './pages/HSI/2eAnnee/texteCompreh/WeeklyNavigator';
+import WeeklyNavigator3 from './pages/HSI/3eAnnee/textComprehen/WeeklyNavigator3';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
 
         {/* Cas spécial : 2e Année + Français */}
         <Route path="/activites/2e Année/Francais" element={<WeeklyNavigator />} />
+        <Route path="/activites/3e Année/Francais" element={<WeeklyNavigator3 />} />
 
         {/* Page contact */}
         <Route path="/contact" element={<Contact />} />
