@@ -9,6 +9,9 @@ import Contact from './HeaderFooter/contact';
 import Activites from './pages/Annee/Activites';
 import WeeklyNavigator from './pages/HSI/2eAnnee/texteCompreh/WeeklyNavigator';
 import WeeklyNavigator3 from './pages/HSI/3eAnnee/textComprehen/WeeklyNavigator3';
+//import LeLionEtLeLievreComponent from './pages/HSI/4eAnnee/LeLionEtLeLievreComponent';
+//import FrenchReadingQuiz from './pages/HSI/4eAnnee/FrenchReadingQuiz';
+import WeeklyNavigator4 from './pages/HSI/4eAnnee/WeeklyNavigator4';
 
 const App = () => {
   return (
@@ -18,7 +21,8 @@ const App = () => {
 
       <Routes>
         {/* Page d'accueil */}
-        <Route path="/" element={<Accueil />} />
+        <Route path="/" element={< Accueil />} />
+        
 
         {/* Page des activités pour chaque année */}
         <Route path="/activites/:annee" element={<Activites />} />
@@ -26,6 +30,11 @@ const App = () => {
         {/* Cas spécial : 2e Année + Français */}
         <Route path="/activites/2e Année/Francais" element={<WeeklyNavigator />} />
         <Route path="/activites/3e Année/Francais" element={<WeeklyNavigator3 />} />
+        <Route path="/activites/4e Année/Francais" element={<WeeklyNavigator4 />} />
+        
+        
+        
+        
 
         {/* Page contact */}
         <Route path="/contact" element={<Contact />} />

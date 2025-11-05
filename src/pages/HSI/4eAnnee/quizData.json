@@ -1,0 +1,114 @@
+{
+  "title": "Le Visiteur Masqué",
+  "text": "Un soir, monsieur Dumont et sa famille regardaient la télévision. Ils étaient réunis dans le salon.\n\nSoudain, vers 22 h 30, ils ont entendu un bruit. C'était comme si quelqu'un ou quelque chose tombait.\n\nÇa venait d'une chambre à coucher à l'étage. Chacun était surpris parce qu'ils étaient tous en bas.\n\nMonsieur Dumont n'a pas perdu de temps et s'est rendu en haut. Tous les membres de la famille, même le plus jeune, l'ont suivi.\n\nMonsieur Dumont est entré dans la chambre des maîtres et a allumé la lampe.\n\nIl y avait un homme debout devant la fenêtre ouverte. Il portait un masque et des vêtements noirs de la tête aux pieds.\n\nC'était un voleur! Monsieur Dumont a couru pour l'attraper, mais il était trop tard.\n\nLe voleur avait déjà descendu par une corde. Bientôt, il a disparu dans la noirceur.\n\nMonsieur Dumont a regardé autour de lui et a repris sa mallette qui était par terre.\n\nC'était peut-être ça le bruit. Heureusement, rien n'a été volé.\n\nLe voleur n'a pas eu le temps de commettre le vol.",
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "✓/✗ Vrai/Faux",
+      "type": "boolean",
+      "questions": [
+        { "q": "La famille Dumont regardait un film au cinéma.", "a": false },
+        { "q": "Le bruit provenait de l'étage supérieur.", "a": true },
+        { "q": "Le voleur portait un masque noir.", "a": true },
+        { "q": "Monsieur Dumont a arrêté le voleur.", "a": false },
+        { "q": "Rien n'a été volé dans la maison.", "a": true }
+      ]
+    },
+    {
+      "id": "qcm",
+      "label": "📝 QCM",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Que faisait la famille Dumont au début de l’histoire ?",
+          "options": ["Ils dînaient", "Ils regardaient la télévision", "Ils dormaient", "Ils jouaient dehors"],
+          "a": "Ils regardaient la télévision"
+        },
+        {
+          "q": "À quelle heure ont-ils entendu le bruit ?",
+          "options": ["21h30", "22h30", "23h00", "Minuit"],
+          "a": "22h30"
+        },
+        {
+          "q": "Où se trouvait le voleur ?",
+          "options": ["Dans la cuisine", "Dans le salon", "Dans la chambre des maîtres", "Dans le sous-sol"],
+          "a": "Dans la chambre des maîtres"
+        },
+        {
+          "q": "Comment le voleur a-t-il fui ?",
+          "options": ["Par la porte", "Par la fenêtre avec une corde", "Par le toit", "Par la cheminée"],
+          "a": "Par la fenêtre avec une corde"
+        },
+        {
+          "q": "Qu’a repris monsieur Dumont après la fuite du voleur ?",
+          "options": ["Son téléphone", "Sa mallette", "Ses clés", "Son portefeuille"],
+          "a": "Sa mallette"
+        }
+      ]
+    },
+    {
+      "id": "vocabulaire",
+      "label": "📚 Vocabulaire",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Que signifie « mallette » ?",
+          "options": ["Un grand sac", "Une petite valise", "Une lampe", "Une chaise"],
+          "a": "Une petite valise"
+        },
+        {
+          "q": "Quel est le synonyme de « voleur » ?",
+          "options": ["Bandit", "Chauffeur", "Peintre", "Médecin"],
+          "a": "Bandit"
+        },
+        {
+          "q": "Que veut dire « noirceur » ?",
+          "options": ["La lumière", "La clarté", "L’obscurité", "La chaleur"],
+          "a": "L’obscurité"
+        },
+        {
+          "q": "Quel mot est proche de « surpris » ?",
+          "options": ["Effrayé", "Content", "Calme", "Fatigué"],
+          "a": "Effrayé"
+        },
+        {
+          "q": "Que signifie « commettre un vol » ?",
+          "options": ["Faire un achat", "Voler quelque chose", "Donner un cadeau", "Écrire une lettre"],
+          "a": "Voler quelque chose"
+        }
+      ]
+    },
+    {
+      "id": "conjugaison",
+      "label": "🕓 Conjugaison",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Conjugue le verbe « entendre » au passé composé (ils) :",
+          "options": ["Ils entendent", "Ils ont entendu", "Ils entendront", "Ils entendaient"],
+          "a": "Ils ont entendu"
+        },
+        {
+          "q": "Conjugue « allumer » au passé composé (il) :",
+          "options": ["Il allume", "Il a allumé", "Il allumait", "Il allumera"],
+          "a": "Il a allumé"
+        },
+        {
+          "q": "Conjugue « disparaître » au passé composé (il) :",
+          "options": ["Il disparaît", "Il a disparu", "Il disparaissait", "Il disparaîtra"],
+          "a": "Il a disparu"
+        },
+        {
+          "q": "Conjugue « courir » au passé composé (il) :",
+          "options": ["Il court", "Il a couru", "Il courait", "Il courra"],
+          "a": "Il a couru"
+        },
+        {
+          "q": "Conjugue « regarder » au passé composé (ils) :",
+          "options": ["Ils regardent", "Ils ont regardé", "Ils regardaient", "Ils regarderont"],
+          "a": "Ils ont regardé"
+        }
+      ]
+    }
+  ]
+}

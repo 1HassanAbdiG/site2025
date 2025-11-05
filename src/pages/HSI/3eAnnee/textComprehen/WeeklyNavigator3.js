@@ -14,6 +14,7 @@ import QuizComponent from "./QuizComponent";
 import createStoryComponent from "./StoryLoader";
 import DicteeInteractive from "../dictee/DicteeComponent";
 import HistoireSemaine from "../histoire/histoire";
+//import LeLionEtLeLievreComponent from "../../4eAnnee/LeLionEtLeLievreComponent";
 
 const WeeklyOverview = () => (
   <Box sx={{ color: "white", textAlign: "center" }}>
@@ -233,6 +234,7 @@ const WeeklyNavigator3 = () => {
           </AnimatePresence>
         </Paper>
       </Box>
+   
     </Box>
   );
 };

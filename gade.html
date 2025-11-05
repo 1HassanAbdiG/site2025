@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue à l'École - Votre Chemin vers l'Avenir</title>
+    <!-- Chargement de Tailwind CSS pour un style moderne et réactif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Configuration générale de la police et des couleurs de base */
+        :root {
+            --color-primary: #1e3a8a; /* Bleu foncé */
+            --color-secondary: #fcd34d; /* Jaune vif */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Arrière-plan très clair */
+            color: #1f2937;
+        }
+        .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        .hero-background {
+            background: linear-gradient(135deg, #1e3a8a99 0%, #10b98199 100%), url('https://placehold.co/1200x800/22c55e/ffffff?text=Espace+Vert+de+l\'École');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh; /* Hauteur de la zone d'accueil */
+        }
+        .custom-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .custom-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.3), 0 4px 6px -2px rgba(30, 58, 138, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bar d'entête (Navigation) -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo/Nom de l'École -->
+                <div class="flex items-center">
+                    <span class="text-2xl font-extrabold text-blue-800 tracking-wider">ÉCOLE</span>
+                    <span class="text-2xl font-extrabold text-yellow-500">ABC</span>
+                </div>
+                <!-- Liens de navigation (cachés sur mobile, affichés sur desktop) -->
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8 sm:items-center">
+                    <a href="#" class="border-b-4 border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-700 py-4 px-2 font-semibold transition duration-300">Accueil</a>
+                    <a href="#" class="border-b-4 border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-700 py-4 px-2 font-semibold transition duration-300">Programmes</a>
+                    <a href="#" class="border-b-4 border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-700 py-4 px-2 font-semibold transition duration-300">Admission</a>
+                    <a href="#" class="border-b-4 border-transparent text-gray-500 hover:border-blue-500 hover:text-blue-700 py-4 px-2 font-semibold transition duration-300">Contact</a>
+                </div>
+                <!-- Bouton Mobile (Menu Hamburger - juste visuel ici) -->
+                <div class="flex items-center sm:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false">
+                        <!-- Icône du menu hamburger -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Principale (Héro) -->
+    <header class="hero-background flex items-center justify-center text-center">
+        <div class="p-8 md:p-16 bg-black bg-opacity-40 rounded-xl shadow-2xl max-w-4xl mx-4">
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white mb-4 text-shadow-custom leading-tight">
+                Cultiver l'Excellence, Inspirer l'Avenir.
+            </h1>
+            <p class="text-xl sm:text-2xl text-yellow-300 mb-8 font-medium text-shadow-custom">
+                Bienvenue dans un environnement où chaque élève est encouragé à s'épanouir.
+            </p>
+            <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-green-500 hover:bg-green-600 transition duration-300 transform hover:scale-105 md:py-4 md:text-lg md:px-10">
+                Découvrir nos Programmes
+            </a>
+        </div>
+    </header>
+
+    <!-- Section de Faits Saillants / Cartes -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-800 text-center mb-12">Pourquoi Choisir notre École?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Carte 1: Éducation personnalisée -->
+                <div class="custom-card bg-white p-6 rounded-xl shadow-xl border-t-4 border-blue-600">
+                    <div class="text-4xl text-blue-600 mb-4">⭐</div>
+                    <h3 class="text-xl font-bold mb-3">Éducation Personnalisée</h3>
+                    <p class="text-gray-600">Des classes à taille humaine et un suivi individuel pour s'assurer que chaque enfant atteint son plein potentiel, à son propre rythme.</p>
+                </div>
+
+                <!-- Carte 2: Technologie et Innovation -->
+                <div class="custom-card bg-white p-6 rounded-xl shadow-xl border-t-4 border-green-600">
+                    <div class="text-4xl text-green-600 mb-4">💻</div>
+                    <h3 class="text-xl font-bold mb-3">Technologie & Innovation</h3>
+                    <p class="text-gray-600">Intégration des outils numériques modernes et de l'apprentissage par projet pour préparer les élèves au monde de demain.</p>
+                </div>
+
+                <!-- Carte 3: Communauté et Culture -->
+                <div class="custom-card bg-white p-6 rounded-xl shadow-xl border-t-4 border-yellow-500">
+                    <div class="text-4xl text-yellow-600 mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-3">Communauté Solidaire</h3>
+                    <p class="text-gray-600">Un environnement bienveillant qui valorise la collaboration, le respect et la diversité culturelle au sein de l'école.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Appel à l'Action (CTA) -->
+    <section class="py-16 bg-blue-800">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Intéressé(e) par une Inscription ?</h2>
+            <p class="text-xl text-blue-200 mb-8">
+                Planifiez une visite ou téléchargez notre brochure pour en savoir plus sur l'expérience École ABC.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-blue-800 bg-yellow-400 hover:bg-yellow-500 transition duration-300 transform hover:scale-105">
+                    Planifier une Visite
+                </a>
+                <a href="#" class="inline-flex items-center justify-center px-8 py-3 border-2 border-white text-base font-medium rounded-full shadow-lg text-white hover:bg-white hover:text-blue-800 transition duration-300 transform hover:scale-105">
+                    Télécharger la Brochure
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; <span id="current-year"></span> École ABC. Tous droits réservés.</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-yellow-400 transition duration-300">Politique de Confidentialité</a>
+                <span class="text-gray-600">|</span>
+                <a href="#" class="hover:text-yellow-400 transition duration-300">Mentions Légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Met à jour l'année dans le pied de page
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "title": "Activités de la semaine",
+  "sections": [
+    {
+      "id": "lecture",
+      "label": "Lecture compréhension",
+      "children": [
+        {
+          "id": "FrenchReadingQuiz",
+          "label": "Le Visiteur Masqué",
+          
+          "component": "FrenchReadingQuiz"
+        }
+        
+      ]
+    },
+    {
+      "id": "histoire",
+      "label": "Histoire de la semaine",
+      "children": [
+    {
+      "id": "histoireInteractive",
+      "label": "Histoire",
+     "component": "HistoireSemaine"
+    }
+  ]
+      
+    },
+   {
+  "id": "dictee",
+  "label": "Dictée de la semaine",
+  "children": [
+    {
+      "id": "dicteeInteractive",
+      "label": "Voir la dictée",
+      "component": "DicteeInteractive"
+    }
+  ]
+}
+
+
+  ]
+}

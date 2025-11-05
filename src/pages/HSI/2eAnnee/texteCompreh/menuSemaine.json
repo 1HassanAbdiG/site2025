@@ -18,6 +18,13 @@
           "folderName": "UneOrangePourSolane",
           "componentJson": "./UneOrangePourSolane/tex1.json",
           "quizJsonPath": "./UneOrangePourSolane/question.json"
+        },
+        {
+          "id": "UnElephantCaTrompe",
+          "label": "Un éléphant, ça trompe",
+          "folderName": "UnElephantCaTrompe",
+          "componentJson": "./UnElephantCaTrompe/tex1.json",
+          "quizJsonPath": "./UnElephantCaTrompe/question.json"
         }
       ]
     },
@@ -25,26 +32,23 @@
       "id": "histoire",
       "label": "Histoire de la semaine",
       "children": [
-    {
-      "id": "histoireInteractive",
-      "label": "Histoire",
-     "component": "HistoireSemaine"
-    }
-  ]
-      
+        {
+          "id": "histoireInteractive",
+          "label": "Histoire",
+          "component": "HistoireSemaine"
+        }
+      ]
     },
-   {
-  "id": "dictee",
-  "label": "Dictée de la semaine",
-  "children": [
     {
-      "id": "dicteeInteractive",
-      "label": "Voir la dictée",
-      "component": "DicteeInteractive"
+      "id": "dictee",
+      "label": "Dictée de la semaine",
+      "children": [
+        {
+          "id": "dicteeInteractive",
+          "label": "Voir la dictée",
+          "component": "DicteeInteractive"
+        }
+      ]
     }
-  ]
-}
-
-
   ]
 }
