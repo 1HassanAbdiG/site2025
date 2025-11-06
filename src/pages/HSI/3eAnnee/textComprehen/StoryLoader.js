@@ -6,6 +6,9 @@ const storyContexts = {
  Oiseau_blesse: {
     audio: require.context("./Oiseau_blesse", false, /\.mp3$/),
     images: require.context("./Oiseau_blesse", false, /\.(png|jpg|jpeg|gif)$/),
+  }, Chercheurs_fossiles: {
+    audio: require.context("./Chercheurs_fossiles", false, /\.mp3$/),
+    images: require.context("./Chercheurs_fossiles", false, /\.(png|jpg|jpeg|gif)$/),
   }
  
   // 👉 ajoute ici d’autres histoires au besoin

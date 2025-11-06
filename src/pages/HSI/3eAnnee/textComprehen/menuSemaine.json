@@ -7,38 +7,41 @@
       "children": [
         {
           "id": "Oiseau_blesse",
-          "label": "Le Oiseau_blesse",
+          "label": "L'Oiseau blessé",
           "folderName": "Oiseau_blesse",
           "componentJson": "./Oiseau_blesse/tex1.json",
           "quizJsonPath": "./Oiseau_blesse/question.json"
+        },
+        {
+          "id": "Chercheurs_fossiles",
+          "label": "Les chercheurs de fossiles",
+          "folderName": "Chercheurs_fossiles",
+          "componentJson": "./Chercheurs_fossiles/tex1.json",
+          "quizJsonPath": "./Chercheurs_fossiles/question.json"
         }
-        
       ]
     },
     {
       "id": "histoire",
       "label": "Histoire de la semaine",
       "children": [
-    {
-      "id": "histoireInteractive",
-      "label": "Histoire",
-     "component": "HistoireSemaine"
-    }
-  ]
-      
+        {
+          "id": "histoireInteractive",
+          "label": "Histoire",
+          "component": "HistoireSemaine"
+        }
+      ]
     },
-   {
-  "id": "dictee",
-  "label": "Dictée de la semaine",
-  "children": [
     {
-      "id": "dicteeInteractive",
-      "label": "Voir la dictée",
-      "component": "DicteeInteractive"
+      "id": "dictee",
+      "label": "Dictée de la semaine",
+      "children": [
+        {
+          "id": "dicteeInteractive",
+          "label": "Voir la dictée",
+          "component": "DicteeInteractive"
+        }
+      ]
     }
-  ]
-}
-
-
   ]
 }

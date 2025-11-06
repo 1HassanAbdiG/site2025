@@ -1,0 +1,99 @@
+{
+  "title": "LES CHERCHEURS DE FOSSILES",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "LES CHERCHEURS DE FOSSILES - Partie 1",
+      "text": "Les dinosaures sont apparus sur la terre il y a très longtemps, environ 205 millions d'années. Il y avait plusieurs espèces de dinosaures. On a trouvé plus de 250 sortes de fossiles. Les scientifiques trouvent encore de nouveaux fossiles.",
+      "questions": [
+        {
+          "question": "Quand les dinosaures sont-ils apparus ?",
+          "options": ["Il y a 205 millions d'années", "Il y a 100 ans", "Il y a 1000 ans"],
+          "correctAnswer": "Il y a 205 millions d'années"
+        },
+        {
+          "question": "Combien de sortes de fossiles ont été trouvées ?",
+          "options": ["250", "25", "10"],
+          "correctAnswer": "250"
+        },
+        {
+          "question": "Les scientifiques trouvent-ils encore des fossiles ?",
+          "options": ["Oui", "Non", "Parfois"],
+          "correctAnswer": "Oui"
+        },
+        {
+          "question": "Tous les dinosaures étaient-ils pareils ?",
+          "options": ["Oui", "Non", "On ne sait pas"],
+          "correctAnswer": "Non"
+        },
+        {
+          "question": "Qui étudie les fossiles ?",
+          "options": ["Les scientifiques", "Les médecins", "Les professeurs de maths"],
+          "correctAnswer": "Les scientifiques"
+        }
+      ]
+    },
+    {
+      "title": "LES CHERCHEURS DE FOSSILES - Partie 2",
+      "text": "Les dinosaures vivaient dans différentes parties du monde. Certains vivaient en troupeaux. Il y avait des millions de dinosaures. Certains étaient petits et d’autres grands. Certains mangeaient des plantes et d’autres de la viande.",
+      "questions": [
+        {
+          "question": "Où vivaient les dinosaures ?",
+          "options": ["Dans différentes parties du monde", "Dans une seule maison", "Dans une seule ville"],
+          "correctAnswer": "Dans différentes parties du monde"
+        },
+        {
+          "question": "Combien de dinosaures y avait-il ?",
+          "options": ["Des millions", "10 seulement", "100 seulement"],
+          "correctAnswer": "Des millions"
+        },
+        {
+          "question": "Certains dinosaures mangeaient quoi ?",
+          "options": ["Des plantes", "Des pierres", "Des jouets"],
+          "correctAnswer": "Des plantes"
+        },
+        {
+          "question": "D’autres dinosaures mangeaient quoi ?",
+          "options": ["De la viande", "Du sable", "De l’eau"],
+          "correctAnswer": "De la viande"
+        },
+        {
+          "question": "Tous les dinosaures étaient-ils de la même taille ?",
+          "options": ["Oui", "Non", "On ne sait pas"],
+          "correctAnswer": "Non"
+        }
+      ]
+    },
+    {
+      "title": "LES CHERCHEURS DE FOSSILES - Partie 3",
+      "text": "Les scientifiques savent quand les dinosaures sont apparus et combien de temps ils ont vécu. Ils regardent les couches de roches où ils trouvent les fossiles pour le savoir.",
+      "questions": [
+        {
+          "question": "Que savent les scientifiques ?",
+          "options": ["Quand les dinosaures sont apparus et combien de temps ils ont vécu", "Ce qu’ils mangeaient tous les jours", "Leur couleur"],
+          "correctAnswer": "Quand les dinosaures sont apparus et combien de temps ils ont vécu"
+        },
+        {
+          "question": "Comment découvrent-ils l’époque des dinosaures ?",
+          "options": ["En regardant les couches de roches", "En regardant les arbres", "En écoutant la pluie"],
+          "correctAnswer": "En regardant les couches de roches"
+        },
+        {
+          "question": "Que trouvent-ils dans les roches ?",
+          "options": ["Des fossiles", "Des coquillages", "Des fleurs"],
+          "correctAnswer": "Des fossiles"
+        },
+        {
+          "question": "Peuvent-ils savoir combien de temps les dinosaures ont vécu ?",
+          "options": ["Oui", "Non", "Parfois"],
+          "correctAnswer": "Oui"
+        },
+        {
+          "question": "Quel outil naturel les aide à dater les dinosaures ?",
+          "options": ["Les couches de roches", "La pluie", "Le vent"],
+          "correctAnswer": "Les couches de roches"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "title": "LES CHERCHEURS DE FOSSILES",
+  "grade": 3,
+  "sections": [
+    {
+      "title": "LES CHERCHEURS DE FOSSILES - Partie 1",
+      "text": "Les dinosaures sont apparus sur la terre, il y a environ 205 millions d'années. Il y avait plusieurs espèces de dinosaures. Au moins 250 différentes sortes de fossiles ont été trouvées. Les scientifiques trouvent encore de nouvelles sortes de fossiles.",
+      "image": "1.png",
+      "audio": "1.mp3"
+    },
+    {
+      "title": "LES CHERCHEURS DE FOSSILES - Partie 2",
+      "text": "Les dinosaures ont vécu dans différentes parties du monde. Dans plusieurs endroits, il y avait des troupeaux de dinosaures. Les personnes qui étudient les fossiles croient qu'il y a eu des millions de dinosaures sur notre planète. Il y en avait des petits et des gros. Il y en avait qui mangeaient des plantes et d'autres qui mangeaient de la viande.",
+      "image": "2.png",
+      "audio": "2.mp3"
+    },
+    {
+      "title": "LES CHERCHEURS DE FOSSILES - Partie 3",
+      "text": "Les scientifiques savent quand les dinosaures sont apparus sur la terre et combien de temps ils sont restés. Ils peuvent connaître l'époque de la vie d'un dinosaure en observant les couches de roches où ils ont trouvé des fossiles.",
+      "image": "3.png",
+      "audio": "3.mp3"
+    }
+  ]
+}
