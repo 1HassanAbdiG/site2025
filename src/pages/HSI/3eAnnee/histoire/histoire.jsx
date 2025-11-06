@@ -10,14 +10,35 @@ const HistoireSemaine = () => {
 
       {/* ✅ Vidéo intégrée via iframe Google Drive */}
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <iframe
-          src="https://drive.google.com/file/d/1140LTNptqx0ZOyWfeuAoj_W7sQCIm7yK/preview"
-          width="80%"
-          height="480"
-          allow="autoplay"
-          style={{ borderRadius: "12px", boxShadow: "0 0 15px rgba(0,0,0,0.5)" }}
-          title="Vidéo Histoire"
-        ></iframe>
+
+        <Box
+          sx={{
+            position: "relative",
+            paddingTop: "56.25%", // Ratio 16:9
+            width: "100%",
+            maxWidth: "100%",
+            overflow: "hidden",
+          }}
+        >
+          <iframe
+            src="https://www.youtube.com/embed/_shZbjeremk?rel=0&modestbranding=1&controls=1&autoplay=0&showinfo=0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              border: "0",
+            }}
+          ></iframe>
+
+        </Box>
+
+
       </Box>
 
       <Typography variant="h6" sx={{ mt: 3 }}>
