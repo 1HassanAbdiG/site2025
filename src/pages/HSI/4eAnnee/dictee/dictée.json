@@ -27,7 +27,7 @@
         },
         {
             "id": "Colonne3",
-            "title": "Semaine 3",
+            "title": "Colonne 3",
             "words": [
                 "âme", "bal", "bazar", "cadavre", "clochette", "corbeille",
                 "couvrir", "désagréable", "eau", "énorme", "fenêtre",
@@ -39,7 +39,7 @@
         },
         {
             "id": "Colonne4",
-            "title": "Semaine 4",
+            "title": "Colonne 4",
             "words": [
                 "aussi", "banc", "blouse", "chacun", "comble", "coton",
                 "cuisine", "docteur", "écolier", "escalier", "fidèle",
@@ -51,7 +51,7 @@
         },
         {
             "id": "Colonne5",
-            "title": "Semaine 5",
+            "title": "Colonne 5",
             "words": [
                 "avant", "banque", "boue", "chapelle", "compliment",
                 "coudre", "dame", "doute", "écrire", "farine", "fils",

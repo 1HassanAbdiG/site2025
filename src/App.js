@@ -12,6 +12,8 @@ import WeeklyNavigator3 from './pages/HSI/3eAnnee/textComprehen/WeeklyNavigator3
 //import LeLionEtLeLievreComponent from './pages/HSI/4eAnnee/LeLionEtLeLievreComponent';
 //import FrenchReadingQuiz from './pages/HSI/4eAnnee/FrenchReadingQuiz';
 import WeeklyNavigator4 from './pages/HSI/4eAnnee/WeeklyNavigator4';
+//import MultiplicationContest from './pages/HSI/2eAnnee/maths/mathsMultiplication';
+import MultiplicationContestJson4 from './pages/HSI/2eAnnee/maths/multiple';
 
 const App = () => {
   return (
@@ -38,6 +40,9 @@ const App = () => {
 
         {/* Page contact */}
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/concours" element={<MultiplicationContestJson4 />} />
+
       </Routes>
 
       {/* Pied de page fixe */}

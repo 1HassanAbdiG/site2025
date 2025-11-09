@@ -9,21 +9,8 @@ import { blue, pink, yellow, lightGreen, orange } from "@mui/material/colors";
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw22HOAUsxV7vBkpi_X8gl-69Xlnvbuc1WIYTPHWPRRDEFC7EQ_-rdlPoQHG-XTuT3wLQ/exec";
 
-// 🔹 Mélange un tableau
+// 🔹 Fonction pour mélanger un tableau
 const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
-
-// 🔹 Mélange les options de chaque question et les questions de la section
-const shuffleQuestionsOptions = (sections) => {
-  return sections.map((section) => ({
-    ...section,
-    questions: shuffleArray(
-      section.questions.map((q) => ({
-        ...q,
-        options: shuffleArray(q.options) // mélange des options
-      }))
-    )
-  }));
-};
 
 const QuizComponent = ({ quizJsonPath, quizTitle }) => {
   const [quizData, setQuizData] = useState(null);
@@ -35,14 +22,22 @@ const QuizComponent = ({ quizJsonPath, quizTitle }) => {
   const [message, setMessage] = useState("");
   const [envoiEffectue, setEnvoiEffectue] = useState(false);
 
-  // 🔹 Import dynamique du JSON avec shuffle
+  // 🔹 Import dynamique et mélange des questions/options
   useEffect(() => {
     if (!quizJsonPath) return;
     import(`${quizJsonPath}`)
       .then((module) => {
-        const data = module.default;
-        const shuffledSections = shuffleQuestionsOptions(data.sections);
-        setQuizData({ ...data, sections: shuffledSections });
+        const quiz = module.default;
+        const shuffledSections = quiz.sections.map((section) => ({
+          ...section,
+          questions: shuffleArray(
+            section.questions.map((q) => ({
+              ...q,
+              options: shuffleArray(q.options)
+            }))
+          ),
+        }));
+        setQuizData({ ...quiz, sections: shuffledSections });
       })
       .catch((err) => {
         console.error("Erreur import quiz JSON :", err);
@@ -50,13 +45,13 @@ const QuizComponent = ({ quizJsonPath, quizTitle }) => {
       });
   }, [quizJsonPath]);
 
-  // 🔹 Enregistrement réponse
+  // 🔹 Gestion des réponses
   const handleChange = (id, value) => {
     if (envoiEffectue) return;
     setUserAnswers({ ...userAnswers, [id]: value });
   };
 
-  // 🔹 Validation section
+  // 🔹 Validation d'une section
   const handleValidation = (sectionId) => {
     if (!quizData) return;
     const section = quizData.sections.find((sec) => sec.title === sectionId);
@@ -68,7 +63,7 @@ const QuizComponent = ({ quizJsonPath, quizTitle }) => {
     setScores((prev) => ({ ...prev, [sectionId]: correct }));
   };
 
-  // 🔹 Soumission quiz
+  // 🔹 Soumission du quiz
   const handleSubmitQuiz = async () => {
     if (envoiEffectue) {
       setMessage("⚠️ Vous avez déjà envoyé vos réponses.");
@@ -125,7 +120,12 @@ const QuizComponent = ({ quizJsonPath, quizTitle }) => {
     setEnvoiEffectue(false);
 
     if (quizData) {
-      const shuffledSections = shuffleQuestionsOptions(quizData.sections);
+      const shuffledSections = quizData.sections.map((section) => ({
+        ...section,
+        questions: shuffleArray(
+          section.questions.map((q) => ({ ...q, options: shuffleArray(q.options) }))
+        ),
+      }));
       setQuizData({ ...quizData, sections: shuffledSections });
     }
   };

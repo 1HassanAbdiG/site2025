@@ -25,6 +25,13 @@
           "folderName": "UnElephantCaTrompe",
           "componentJson": "./UnElephantCaTrompe/tex1.json",
           "quizJsonPath": "./UnElephantCaTrompe/question.json"
+        },
+        {
+          "id": "Eve_petite_chevre",
+          "label": "Ève la petite chèvre",
+          "folderName": "Eve_petite_chevre",
+          "componentJson": "./Eve_chevre/tex1.json",
+          "quizJsonPath": "./Eve_chevre/question.json"
         }
       ]
     },

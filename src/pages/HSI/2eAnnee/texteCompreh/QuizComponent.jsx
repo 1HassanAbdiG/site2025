@@ -8,9 +8,11 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { blue, pink, yellow, lightGreen, orange } from "@mui/material/colors";
 
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw22HOAUsxV7vBkpi_X8gl-69Xlnvbuc1WIYTPHWPRRDEFC7EQ_-rdlPoQHG-XTuT3wLQ/exec";
+
+// 🔹 Fonction pour mélanger un tableau
 const shuffleArray = (array) => [...array].sort(() => Math.random() - 0.5);
 
-const QuizComponent = ({ quizJsonPath ,quizTitle}) => {
+const QuizComponent = ({ quizJsonPath, quizTitle }) => {
   const [quizData, setQuizData] = useState(null);
   const [userAnswers, setUserAnswers] = useState({});
   const [scores, setScores] = useState({});
@@ -20,24 +22,36 @@ const QuizComponent = ({ quizJsonPath ,quizTitle}) => {
   const [message, setMessage] = useState("");
   const [envoiEffectue, setEnvoiEffectue] = useState(false);
 
-  // 🔹 Import dynamique du JSON
+  // 🔹 Import dynamique et mélange des questions/options
   useEffect(() => {
     if (!quizJsonPath) return;
     import(`${quizJsonPath}`)
-      .then((module) => setQuizData(module.default))
+      .then((module) => {
+        const quiz = module.default;
+        const shuffledSections = quiz.sections.map((section) => ({
+          ...section,
+          questions: shuffleArray(
+            section.questions.map((q) => ({
+              ...q,
+              options: shuffleArray(q.options)
+            }))
+          ),
+        }));
+        setQuizData({ ...quiz, sections: shuffledSections });
+      })
       .catch((err) => {
         console.error("Erreur import quiz JSON :", err);
         setMessage("❌ Impossible de charger le quiz !");
       });
   }, [quizJsonPath]);
 
-  // 🔹 Enregistrement réponse
+  // 🔹 Gestion des réponses
   const handleChange = (id, value) => {
     if (envoiEffectue) return;
     setUserAnswers({ ...userAnswers, [id]: value });
   };
 
-  // 🔹 Validation section
+  // 🔹 Validation d'une section
   const handleValidation = (sectionId) => {
     if (!quizData) return;
     const section = quizData.sections.find((sec) => sec.title === sectionId);
@@ -49,7 +63,7 @@ const QuizComponent = ({ quizJsonPath ,quizTitle}) => {
     setScores((prev) => ({ ...prev, [sectionId]: correct }));
   };
 
-  // 🔹 Soumission quiz
+  // 🔹 Soumission du quiz
   const handleSubmitQuiz = async () => {
     if (envoiEffectue) {
       setMessage("⚠️ Vous avez déjà envoyé vos réponses.");
@@ -81,7 +95,7 @@ const QuizComponent = ({ quizJsonPath ,quizTitle}) => {
     const total = Object.values(allScores).reduce((sum, val) => sum + val, 0);
     setTotalScore(total);
 
-    const quizResult = { action: "quiz", nom, classe, titre: quizTitle,  totalScore: total, ...allScores };
+    const quizResult = { action: "quiz", nom, classe, titre: quizTitle, totalScore: total, ...allScores };
     try {
       await fetch(GOOGLE_SCRIPT_URL, {
         method: "POST",

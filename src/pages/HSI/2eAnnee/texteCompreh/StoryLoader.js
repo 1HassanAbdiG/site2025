@@ -16,6 +16,10 @@ const storyContexts = {
   audio: require.context("./UnElephantCaTrompe", false, /\.mp3$/),
   images: require.context("./UnElephantCaTrompe", false, /\.(png|jpg|jpeg|gif)$/),
 },
+Eve_chevre: {
+   audio: require.context("././Eve_chevre", false, /\.mp3$/),
+    images: require.context("./Eve_chevre", false, /\.(png|jpg|jpeg|gif|mp3)$/),
+  },
   // ex: lapin: { audio: require.context("./lapin", false, /\.mp3$/), images: require.context("./lapin", false, /\.(png|jpg)$/) }
 };
 
