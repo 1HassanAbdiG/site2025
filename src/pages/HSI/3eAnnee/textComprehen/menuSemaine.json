@@ -18,6 +18,13 @@
           "folderName": "Chercheurs_fossiles",
           "componentJson": "./Chercheurs_fossiles/tex1.json",
           "quizJsonPath": "./Chercheurs_fossiles/question.json"
+        },
+        {
+          "id": "La_princesse_Devi",
+          "label": "La princesse Devi",
+          "folderName": "La_princesse_Devi",
+          "componentJson": "./La_princesse_Devi/tex1.json",
+          "quizJsonPath": "./La_princesse_Devi/question.json"
         }
       ]
     },

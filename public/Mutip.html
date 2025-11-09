@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables de Multiplication</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .etape {
+            display: none;
+        }
+
+        .etape.active {
+            display: block;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            font-size: 1.1em;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 18px;
+            border: none;
+            border-radius: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .tables-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .table-btn {
+            padding: 20px;
+            border: 3px solid #667eea;
+            border-radius: 15px;
+            font-size: 1.3em;
+            font-weight: bold;
+            background: white;
+            color: #667eea;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .table-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .table-btn.selected {
+            background: #667eea;
+            color: white;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .question {
+            font-size: 4em;
+            font-weight: bold;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 20px;
+            border-radius: 15px;
+            background: #f8f9fa;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .progress-container {
+            background: #e9ecef;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .feedback {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .feedback.correct {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .feedback.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Inscription -->
+        <div id="etape-inscription" class="etape active">
+            <div class="header">
+                <h1>🎯 Tables de Multiplication</h1>
+                <p>Apprends les tables de 1 à 15</p>
+            </div>
+            <div class="input-group">
+                <label>Ton prénom</label>
+                <input type="text" id="nom" placeholder="Ex: Marie">
+            </div>
+            <div class="input-group">
+                <label>Ta classe</label>
+                <input type="text" id="classe" placeholder="Ex: CM1">
+            </div>
+            <button class="btn" id="btn-commencer">Commencer !</button>
+        </div>
+
+        <!-- Choix de la table -->
+        <div id="etape-tables" class="etape">
+            <div class="header">
+                <h1>Bonjour <span id="nom-affiche"></span> ! 👋</h1>
+                <p>Choisis la table à réviser (20 questions)</p>
+            </div>
+            <div class="tables-grid" id="tables-grid"></div>
+            <button class="btn" id="btn-demarrer" style="display: none;">Démarrer les 20 questions</button>
+        </div>
+
+        <!-- Jeu -->
+        <div id="etape-jeu" class="etape">
+            <div class="header">
+                <h1>Table de <span id="table-titre">2</span></h1>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar">Question 1/20</div>
+            </div>
+
+            <div class="stats">
+                <div class="stat-card" style="background: #d1ecf1;">
+                    <div class="stat-number" style="color: #0c5460;" id="score">0</div>
+                    <div>Correct</div>
+                </div>
+                <div class="stat-card" style="background: #f8d7da;">
+                    <div class="stat-number" style="color: #721c24;" id="erreurs">0</div>
+                    <div>Erreurs</div>
+                </div>
+                <div class="stat-card" style="background: #d4edda;">
+                    <div class="stat-number" style="color: #155724;" id="pourcentage">0%</div>
+                    <div>Réussite</div>
+                </div>
+                <div class="stat-card" style="background: #e7d5ff;">
+                    <div class="stat-number" style="color: #5a1f99;" id="temps">0:00</div>
+                    <div>Temps</div>
+                </div>
+            </div>
+
+            <div class="question" id="question">2 × 3 = ?</div>
+            <div class="input-group">
+                <input type="number" id="reponse" placeholder="Ta réponse" style="text-align: center; font-size: 2em;">
+            </div>
+            <button class="btn" id="btn-verifier">Vérifier</button>
+            <div id="feedback"></div>
+        </div>
+
+        <!-- Bilan -->
+        <div id="etape-bilan" class="etape">
+            <div class="header">
+                <h1>🏆 Bilan de <span id="nom-bilan"></span></h1>
+                <p>Table de <span id="table-bilan"></span> - Classe: <span id="classe-bilan"></span></p>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-card" style="background: #d1ecf1;">
+                    <div class="stat-number" style="color: #0c5460;" id="bilan-correct">0</div>
+                    <div>Bonnes réponses</div>
+                </div>
+                <div class="stat-card" style="background: #f8d7da;">
+                    <div class="stat-number" style="color: #721c24;" id="bilan-erreurs">0</div>
+                    <div>Erreurs</div>
+                </div>
+                <div class="stat-card" style="background: #d4edda;">
+                    <div class="stat-number" style="color: #155724;" id="bilan-pourcentage">0%</div>
+                    <div>Réussite</div>
+                </div>
+                <div class="stat-card" style="background: #e7d5ff;">
+                    <div class="stat-number" style="color: #5a1f99;" id="bilan-temps">0:00</div>
+                    <div>Temps total</div>
+                </div>
+            </div>
+
+            <div id="liste-erreurs" style="margin: 30px 0;"></div>
+
+            <div id="message" style="text-align: center; font-size: 1.8em; padding: 20px; margin: 20px 0; border-radius: 15px;"></div>
+            
+            <button class="btn" id="btn-rejouer">Choisir une autre table</button>
+        </div>
+    </div>
+
+    <script>
+        const app = {
+            nom: '',
+            classe: '',
+            tableChoisie: null,
+            questionNumero: 0,
+            questionsTotal: 20,
+            score: 0,
+            erreurs: 0,
+            serie: 0,
+            meilleureSerie: 0,
+            questionActuelle: null,
+            historique: [],
+            questionsRestantes: [],
+            tempsDebut: null,
+            tempsEcoule: 0,
+            chronometre: null,
+
+            init() {
+                document.getElementById('btn-commencer').addEventListener('click', () => this.commencer());
+                document.getElementById('btn-demarrer').addEventListener('click', () => this.demarrerJeu());
+                document.getElementById('btn-verifier').addEventListener('click', () => this.verifier());
+                document.getElementById('reponse').addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') this.verifier();
+                });
+                document.getElementById('btn-rejouer').addEventListener('click', () => this.recommencer());
+            },
+
+            changerEtape(etape) {
+                document.querySelectorAll('.etape').forEach(el => el.classList.remove('active'));
+                document.getElementById('etape-' + etape).classList.add('active');
+            },
+
+            commencer() {
+                this.nom = document.getElementById('nom').value.trim();
+                this.classe = document.getElementById('classe').value.trim();
+                
+                if (!this.nom || !this.classe) {
+                    alert('Merci de remplir ton prénom et ta classe !');
+                    return;
+                }
+                
+                document.getElementById('nom-affiche').textContent = this.nom;
+                this.afficherTablesDisponibles();
+                this.changerEtape('tables');
+            },
+
+            afficherTablesDisponibles() {
+                const grid = document.getElementById('tables-grid');
+                grid.innerHTML = '';
+                
+                for (let i = 1; i <= 15; i++) {
+                    const btn = document.createElement('button');
+                    btn.className = 'table-btn';
+                    btn.textContent = i;
+                    btn.addEventListener('click', () => this.selectionnerTable(i, btn));
+                    grid.appendChild(btn);
+                }
+            },
+
+            selectionnerTable(table, btn) {
+                document.querySelectorAll('.table-btn').forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                this.tableChoisie = table;
+                document.getElementById('btn-demarrer').style.display = 'block';
+            },
+
+            demarrerJeu() {
+                if (!this.tableChoisie) {
+                    alert('Choisis une table !');
+                    return;
+                }
+
+                this.questionNumero = 0;
+                this.score = 0;
+                this.erreurs = 0;
+                this.serie = 0;
+                this.meilleureSerie = 0;
+                this.historique = [];
+                this.tempsDebut = Date.now();
+                this.tempsEcoule = 0;
+                
+                // Démarrer le chronomètre
+                if (this.chronometre) clearInterval(this.chronometre);
+                this.chronometre = setInterval(() => {
+                    this.tempsEcoule = Math.floor((Date.now() - this.tempsDebut) / 1000);
+                    const mins = Math.floor(this.tempsEcoule / 60);
+                    const secs = this.tempsEcoule % 60;
+                    document.getElementById('temps').textContent = mins + ':' + (secs < 10 ? '0' : '') + secs;
+                }, 1000);
+                
+                // Préparer les 20 questions (mélange de 1 à 15)
+                this.questionsRestantes = [];
+                for (let i = 1; i <= 15; i++) {
+                    this.questionsRestantes.push(i);
+                }
+                
+                // Si moins de 20, on répète
+                while (this.questionsRestantes.length < this.questionsTotal) {
+                    for (let i = 1; i <= 15 && this.questionsRestantes.length < this.questionsTotal; i++) {
+                        this.questionsRestantes.push(i);
+                    }
+                }
+                
+                // Mélanger
+                this.questionsRestantes.sort(() => Math.random() - 0.5);
+                
+                document.getElementById('table-titre').textContent = this.tableChoisie;
+                this.changerEtape('jeu');
+                this.nouvelleQuestion();
+            },
+
+            nouvelleQuestion() {
+                if (this.questionNumero >= this.questionsTotal) {
+                    if (this.chronometre) clearInterval(this.chronometre);
+                    this.afficherBilan();
+                    return;
+                }
+
+                const multiplicateur = this.questionsRestantes[this.questionNumero];
+                
+                this.questionActuelle = {
+                    a: this.tableChoisie,
+                    b: multiplicateur,
+                    resultat: this.tableChoisie * multiplicateur
+                };
+                
+                this.questionNumero++;
+                
+                document.getElementById('question').textContent = 
+                    this.questionActuelle.a + ' × ' + this.questionActuelle.b + ' = ?';
+                document.getElementById('reponse').value = '';
+                document.getElementById('reponse').disabled = false;
+                document.getElementById('feedback').innerHTML = '';
+                document.getElementById('reponse').focus();
+                
+                // Mise à jour de la barre de progression
+                const progress = (this.questionNumero / this.questionsTotal) * 100;
+                document.getElementById('progress-bar').style.width = progress + '%';
+                document.getElementById('progress-bar').textContent = 
+                    'Question ' + this.questionNumero + '/' + this.questionsTotal;
+            },
+
+            verifier() {
+                const reponse = parseInt(document.getElementById('reponse').value);
+                if (isNaN(reponse)) return;
+                
+                const correct = reponse === this.questionActuelle.resultat;
+                
+                this.historique.push({
+                    question: this.questionActuelle.a + ' × ' + this.questionActuelle.b,
+                    reponseUtilisateur: reponse,
+                    reponseCorrecte: this.questionActuelle.resultat,
+                    correct: correct
+                });
+                
+                document.getElementById('reponse').disabled = true;
+                
+                if (correct) {
+                    this.score++;
+                    this.serie++;
+                    if (this.serie > this.meilleureSerie) {
+                        this.meilleureSerie = this.serie;
+                    }
+                    
+                    document.getElementById('feedback').innerHTML = '✅ Bravo !';
+                    document.getElementById('feedback').className = 'feedback correct';
+                    
+                    setTimeout(() => {
+                        this.nouvelleQuestion();
+                    }, 800);
+                } else {
+                    this.erreurs++;
+                    this.serie = 0;
+                    
+                    document.getElementById('feedback').innerHTML = 
+                        '❌ Non ! ' + this.questionActuelle.a + ' × ' + this.questionActuelle.b + ' = ' + this.questionActuelle.resultat;
+                    document.getElementById('feedback').className = 'feedback incorrect';
+                    
+                    setTimeout(() => {
+                        this.nouvelleQuestion();
+                    }, 1500);
+                }
+                
+                this.mettreAJourStats();
+            },
+
+            mettreAJourStats() {
+                document.getElementById('score').textContent = this.score;
+                document.getElementById('erreurs').textContent = this.erreurs;
+                const total = this.score + this.erreurs;
+                const pct = total > 0 ? Math.round((this.score / total) * 100) : 0;
+                document.getElementById('pourcentage').textContent = pct + '%';
+            },
+
+            afficherBilan() {
+                const pct = Math.round((this.score / this.questionsTotal) * 100);
+                const mins = Math.floor(this.tempsEcoule / 60);
+                const secs = this.tempsEcoule % 60;
+                const tempsFormate = mins + ':' + (secs < 10 ? '0' : '') + secs;
+                
+                document.getElementById('nom-bilan').textContent = this.nom;
+                document.getElementById('table-bilan').textContent = this.tableChoisie;
+                document.getElementById('classe-bilan').textContent = this.classe;
+                document.getElementById('bilan-correct').textContent = this.score;
+                document.getElementById('bilan-erreurs').textContent = this.erreurs;
+                document.getElementById('bilan-pourcentage').textContent = pct + '%';
+                document.getElementById('bilan-temps').textContent = tempsFormate;
+                
+                // Liste des erreurs
+                const erreursListe = this.historique.filter(h => !h.correct);
+                if (erreursListe.length > 0) {
+                    let html = '<div style="background: #fff5f5; padding: 20px; border-radius: 15px;">';
+                    html += '<h3 style="color: #721c24; margin-bottom: 15px;">Questions à réviser (' + erreursListe.length + ')</h3>';
+                    erreursListe.forEach(err => {
+                        html += '<div style="background: white; padding: 15px; margin: 10px 0; border-radius: 10px;">';
+                        html += '<span style="font-weight: bold;">' + err.question + '</span> ';
+                        html += '<span style="color: #dc3545; text-decoration: line-through; margin: 0 10px;">' + err.reponseUtilisateur + '</span>';
+                        html += '<span style="color: #28a745; font-weight: bold;">→ ' + err.reponseCorrecte + '</span>';
+                        html += '</div>';
+                    });
+                    html += '</div>';
+                    document.getElementById('liste-erreurs').innerHTML = html;
+                } else {
+                    document.getElementById('liste-erreurs').innerHTML = '';
+                }
+                
+                // Message d'encouragement
+                let message = '';
+                let couleur = '';
+                
+                if (pct === 100) {
+                    message = '🎉 PARFAIT ! Tu maîtrises la table de ' + this.tableChoisie + ' !';
+                    couleur = '#d4edda';
+                } else if (pct >= 90) {
+                    message = '🌟 Excellent ! Presque parfait !';
+                    couleur = '#d1ecf1';
+                } else if (pct >= 75) {
+                    message = '👏 Très bien ! Continue comme ça !';
+                    couleur = '#d1ecf1';
+                } else if (pct >= 60) {
+                    message = '👍 Bien ! Révise encore un peu !';
+                    couleur = '#fff3cd';
+                } else {
+                    message = '💪 Continue à t\'entraîner !';
+                    couleur = '#f8d7da';
+                }
+                
+                const msgDiv = document.getElementById('message');
+                msgDiv.textContent = message;
+                msgDiv.style.background = couleur;
+                
+                this.changerEtape('bilan');
+            },
+
+            recommencer() {
+                this.tableChoisie = null;
+                document.getElementById('btn-demarrer').style.display = 'none';
+                this.afficherTablesDisponibles();
+                this.changerEtape('tables');
+            }
+        };
+
+        app.init();
+    </script>
+</body>
+</html>
+

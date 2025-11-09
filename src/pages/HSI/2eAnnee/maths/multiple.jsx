@@ -70,6 +70,7 @@ const QuestionTypography = styled(Typography)(() => ({
   margin: '1.5rem 0',
 }));
 
+
 const MultiplicationContest = () => {
   const [name, setName] = useState('');
   const [difficulty, setDifficulty] = useState('10');
@@ -204,10 +205,31 @@ const MultiplicationContest = () => {
 
   // Page d'accueil
   if (!started) {
+    
     return (
       <Container maxWidth="lg">
         <StyledCard>
           <CardContent>
+           <Typography variant="h3" sx={{ color: green[800], mb: 2 }}>
+          🧮 Entraîne-toi avant le concours !
+        </Typography>
+        <Box
+          sx={{
+            border: '2px solid #4CAF50',
+            borderRadius: '10px',
+            overflow: 'hidden',
+            height: '800px',
+            mb: 3,
+          }}
+        >
+          <iframe
+            src="/Mutip.html"
+            width="100%"
+            height="100%"
+            title="Tables d'entraînement"
+            style={{ border: 'none' }}
+          />
+        </Box>
             <Typography variant="h3" sx={{ color: green[800] }}>
               🏆 Concours de Multiplication 🏆
             </Typography>
@@ -391,7 +413,9 @@ const MultiplicationContest = () => {
           handleQuit={handleQuit}
         />
       </Box>
+      
     </Container>
+    
   );
 };
 

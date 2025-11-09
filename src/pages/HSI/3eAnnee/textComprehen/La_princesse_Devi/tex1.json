@@ -1,0 +1,24 @@
+{
+  "title": "La princesse Devi",
+  "grade": 2,
+  "sections": [
+    {
+      "title": "La princesse Devi - Partie 1",
+      "text": "Il y a très, très longtemps, en Inde, un fermier avait une fille nommée Devi. Chaque jour, elle aidait son père dans les champs de riz.",
+      "image": "1.png",
+      "audio": "1.mp3"
+    },
+    {
+      "title": "La princesse Devi - Partie 2",
+      "text": "Un soir, en rentrant à la maison après une dure journée de travail, Devi a trouvé un paon. Il était gravement blessé. Devi a eu pitié du paon et l’a amené à la maison. Elle l’a nourri et a soigné ses blessures.",
+      "image": "2.png",
+      "audio": "2.mp3"
+    },
+    {
+      "title": "La princesse Devi - Partie 3",
+      "text": "Le lendemain matin, un très beau prince est apparu devant elle. « Je suis le paon dont tu as pris soin. J’ai été transformé en paon par une méchante sorcière, mais ta gentillesse a rompu le mauvais sort. » Le prince a épousé Devi et l’a emmenée vivre dans son palais. Ils ont vécu heureux ensemble.",
+      "image": "3.png",
+      "audio": "3.mp3"
+    }
+  ]
+}

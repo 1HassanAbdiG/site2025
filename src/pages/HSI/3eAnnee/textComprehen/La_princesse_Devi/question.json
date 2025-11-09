@@ -1,0 +1,69 @@
+{
+  "sections": [
+    {
+      "title": "La princesse Devi - Partie 1",
+      "questions": [
+        {
+          "question": "Où se passe l’histoire ?",
+          "options": ["En Inde", "En France", "En Chine"],
+          "correctAnswer": "En Inde"
+        },
+        {
+          "question": "Comment s’appelait la fille du fermier ?",
+          "options": ["Devi", "Sara", "Lina"],
+          "correctAnswer": "Devi"
+        },
+        {
+          "question": "Que faisait Devi chaque jour ?",
+          "options": ["Elle aidait son père", "Elle jouait avec ses amis", "Elle dormait tard"],
+          "correctAnswer": "Elle aidait son père"
+        }
+      ]
+    },
+    {
+      "title": "La princesse Devi - Partie 2",
+      "questions": [
+        {
+          "question": "Que trouve Devi un soir ?",
+          "options": ["Un paon blessé", "Un chaton", "Un oiseau dans un arbre"],
+          "correctAnswer": "Un paon blessé"
+        },
+        {
+          "question": "Que fait Devi pour aider le paon ?",
+          "options": ["Elle le soigne et le nourrit", "Elle le laisse dehors", "Elle l’apporte à son père"],
+          "correctAnswer": "Elle le soigne et le nourrit"
+        },
+        {
+          "question": "Comment est le paon ?",
+          "options": ["Blessé", "En bonne santé", "Endormi"],
+          "correctAnswer": "Blessé"
+        }
+      ]
+    },
+    {
+      "title": "La princesse Devi - Partie 3",
+      "questions": [
+        {
+          "question": "Que devient le paon ?",
+          "options": ["Un prince", "Un dragon", "Un fermier"],
+          "correctAnswer": "Un prince"
+        },
+        {
+          "question": "Qui a jeté un sort au prince ?",
+          "options": ["Une méchante sorcière", "Une fée", "Un géant"],
+          "correctAnswer": "Une méchante sorcière"
+        },
+        {
+          "question": "Pourquoi le sort a-t-il été rompu ?",
+          "options": ["Grâce à la gentillesse de Devi", "Grâce à la pluie", "Grâce au roi"],
+          "correctAnswer": "Grâce à la gentillesse de Devi"
+        },
+        {
+          "question": "Comment finit l’histoire ?",
+          "options": ["Ils se marient et vivent heureux", "Le prince part seul", "Devi retourne chez son père"],
+          "correctAnswer": "Ils se marient et vivent heureux"
+        }
+      ]
+    }
+  ]
+}

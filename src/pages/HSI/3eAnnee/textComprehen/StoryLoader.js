@@ -9,7 +9,11 @@ const storyContexts = {
   }, Chercheurs_fossiles: {
     audio: require.context("./Chercheurs_fossiles", false, /\.mp3$/),
     images: require.context("./Chercheurs_fossiles", false, /\.(png|jpg|jpeg|gif)$/),
-  }
+  },La_princesse_Devi: {
+  audio: require.context("./La_princesse_Devi", false, /\.mp3$/),
+  images: require.context("./La_princesse_Devi", false, /\.(png|jpg|jpeg|gif)$/),
+},
+
  
   // 👉 ajoute ici d’autres histoires au besoin
   // ex: lapin: { audio: require.context("./lapin", false, /\.mp3$/), images: require.context("./lapin", false, /\.(png|jpg)$/) }

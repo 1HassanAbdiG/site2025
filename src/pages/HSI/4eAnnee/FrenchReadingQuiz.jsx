@@ -8,10 +8,10 @@ import {
   Person, School, Assignment, EmojiEvents,
   CheckCircle,  AutoStories, Quiz, Visibility, VisibilityOff
 } from "@mui/icons-material";
-import quizData from "./quizData.json";
+import quizData from "./ambition.json";
 import QuizSection from "./QuizSections";
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxqwnISDO3dGOwmMTH5mZHKki_gn09jiULMMd_deTPBmLCcwicn6gAYUYgvW9TJ3QXL0w/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz_U7d4ylCuSq-SvTkICAiLIz0S_mvGxWeYz5ZL0_mxTQAAQeNVKuaXEzkfkRvh1IfhAw/exec";
 
 export default function FrenchReadingQuiz() {
   const [activeTab, setActiveTab] = useState("form");
@@ -268,13 +268,13 @@ export default function FrenchReadingQuiz() {
                           Revoir le texte
                         </Button>
 
-                        <Card sx={{ backgroundColor: "rgba(255,255,255,0.05)", border: `1px solid ${colors.border}`, borderRadius: 2 }}>
-                          <CardContent>
+                        <Card sx={{ backgroundColor: "rgba(2, 86, 62, 0.05)", border: `1px solid ${colors.border}`, borderRadius: 2 }}>
+                          <CardContent background="white">
                             <Typography variant="h6" sx={{ color: colors.primary, mb: 2, display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "bold" }}>
                               <Person sx={{ mr: 1 }} /> Élève : {student.name} ({student.grade})
                             </Typography>
                             <Divider sx={{ my: 2, borderColor: colors.border }} />
-                            <Stack spacing={2} alignItems="center">
+                            <Stack spacing={2} alignItems="center" >
                               {Object.keys(scores).map(s => {
                                 const section = quizData.sections.find(sec => sec.id === s);
                                 const maxScore = section?.questions.length || 1;
@@ -286,7 +286,7 @@ export default function FrenchReadingQuiz() {
                                 );
                               })}
                             </Stack>
-                            <Divider sx={{ my: 3, borderColor: colors.border }} />
+                            <Divider sx={{ my: 3, borderColor: colors.border, }} />
                             <Typography variant="h5" sx={{ color: colors.primary, fontWeight: "bold", display: "flex", alignItems: "center", justifyContent: "center" }}>
                               <CheckCircle sx={{ mr: 1 }} /> Score Total : {totalScore}/{totalQuestions}
                             </Typography>

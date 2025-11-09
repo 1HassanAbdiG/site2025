@@ -27,6 +27,7 @@ export default function QuizSection({
       <Typography
         variant="h4"
         sx={{
+         
           color: "#00e676",
           fontWeight: "bold",
           mb: 3,
