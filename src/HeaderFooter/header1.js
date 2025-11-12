@@ -42,11 +42,18 @@ const Header = () => {
               <Link to="/" onClick={closeMenu}>Home</Link>
             </li>
            
+           
+           
             <li>
-              <Link to="/contact" onClick={closeMenu}>Contact</Link>
+              <Link to="/concours2" onClick={closeMenu}>Multiplication</Link>
             </li>
-            <li>
-              <Link to="/concours" onClick={closeMenu}>Multiplication</Link>
+             <li>
+              <Link to="/concours" onClick={closeMenu}>Multiplication2</Link>
+            </li>
+
+
+             <li>
+              <Link to="/contact" onClick={closeMenu}>Contact</Link>
             </li>
           </ul>
         </nav>

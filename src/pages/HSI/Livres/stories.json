@@ -1,0 +1,47 @@
+[
+  {
+    "id": "luna",
+    "title": "Le Voyage de Luna",
+    "subtitle": "Une aventure extraordinaire",
+    "pages": [
+      { "type": "cover", "content": "📖✨", "title": "Le Voyage de Luna", "subtitle": "Une aventure extraordinaire", "emoji": "🌙⭐" },
+      { "type": "image", "icon": "🌙" },
+      { "type": "text", "title": "Chapitre 1 : La Petite Étoile", "content": "Luna était une petite étoile curieuse..." },
+      { "type": "image", "icon": "🌍" },
+      { "type": "text", "title": "Chapitre 2 : La Descente", "content": "Luna rassembla tout son courage..." },
+      { "type": "image", "icon": "🌲" },
+      { "type": "text", "title": "Chapitre 3 : La Forêt Enchantée", "content": "Luna atterrit doucement dans une forêt magique..." },
+      { "type": "image", "icon": "🦋" },
+      { "type": "text", "title": "Chapitre 4 : La Rencontre Magique", "content": "Soudain, un magnifique papillon apparut..." },
+      { "type": "image", "icon": "🌟" },
+      { "type": "text", "title": "Chapitre 5 : Le Retour", "content": "Quand la nuit tomba, Luna sut qu’il était temps..." },
+      { "type": "cover", "content": "🎉✨", "title": "Fin de l’histoire", "subtitle": "Et toi, quelle aventure vas-tu vivre ?", "emoji": "💫" }
+    ]
+  },
+  {
+    "id": "devi",
+    "title": "La Princesse Devi",
+    "subtitle": "L’histoire d’un cœur généreux",
+    "pages": [
+      { "type": "cover", "content": "👑✨", "title": "La Princesse Devi", "subtitle": "L’histoire d’un cœur généreux", "emoji": "🦚" },
+      { "type": "text", "title": "Chapitre 1", "content": "Il y a très longtemps, en Inde, un fermier avait une fille nommée Devi..." },
+      { "type": "image", "icon": "🦚" },
+      { "type": "text", "title": "Chapitre 2", "content": "Un soir, Devi trouva un paon blessé..." },
+      { "type": "cover", "content": "🌸", "title": "Fin", "subtitle": "La bonté illumine le monde", "emoji": "💖" }
+    ]
+  },
+  {
+    "id": "garden",
+    "title": "Les Compagnons du Jardin",
+    "subtitle": "Une histoire de partage",
+    "pages": [
+      { "type": "cover", "content": "🌾", "title": "Les Compagnons du Jardin", "subtitle": "Une histoire de partage", "emoji": "🌱" },
+      { "type": "text", "title": "Chapitre 1", "content": "Trois frères possédaient un grand jardin..." },
+      { "type": "image", "icon": "🌿" },
+      { "type": "text", "title": "Chapitre 2", "content": "Un jour, ils décidèrent de récolter sans gratitude..." },
+      { "type": "image", "icon": "🔥" },
+      { "type": "text", "title": "Chapitre 3", "content": "Leur jardin brûla, et ils comprirent leur erreur..." },
+      { "type": "cover", "content": "🌙", "title": "Fin", "subtitle": "Le partage rend la vie fertile", "emoji": "🌻" }
+    ]
+  }
+]

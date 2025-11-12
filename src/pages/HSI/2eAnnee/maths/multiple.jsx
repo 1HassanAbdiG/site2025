@@ -23,6 +23,7 @@ import TimerIcon from '@mui/icons-material/Timer';
 import questionBank from './question.json';
 import ResultTable from './ResultTable';
 
+
 // URL de l'App Script
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwzhRIUyeDq3RdVC7XP-aZR4638hfYsM8tC5MYRbeDSf-seXowx0kEZxoK7INBfbBpB/exec";
 
@@ -202,6 +203,7 @@ const MultiplicationContest = () => {
     setStudentResults([]);
 
   };
+  
 
   // Page d'accueil
   if (!started) {
@@ -341,6 +343,8 @@ const MultiplicationContest = () => {
   const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
 
   return (
+    <>
+    
     <Container maxWidth="lg">
       <StyledCard>
         <CardContent>
@@ -413,8 +417,13 @@ const MultiplicationContest = () => {
           handleQuit={handleQuit}
         />
       </Box>
+     
       
     </Container>
+    
+
+    </>
+    
     
   );
 };

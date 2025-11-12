@@ -14,6 +14,10 @@ import WeeklyNavigator3 from './pages/HSI/3eAnnee/textComprehen/WeeklyNavigator3
 import WeeklyNavigator4 from './pages/HSI/4eAnnee/WeeklyNavigator4';
 //import MultiplicationContest from './pages/HSI/2eAnnee/maths/mathsMultiplication';
 import MultiplicationContestJson4 from './pages/HSI/2eAnnee/maths/multiple';
+//import SelectionHistoire from './pages/HSI/Livres/Sélection_histoire';
+//import JeuTablesMUI from './pages/HSI/2eAnnee/maths/mutlication1_12';
+//import JeuTablesSelector from './pages/HSI/2eAnnee/maths/MultiplicationSelector';
+import MultiplicationSelector from './pages/HSI/2eAnnee/maths/MultiplicationSelector';
 
 const App = () => {
   return (
@@ -23,7 +27,7 @@ const App = () => {
 
       <Routes>
         {/* Page d'accueil */}
-        <Route path="/" element={< Accueil />} />
+        <Route path="/" element={<Accueil/>} />
         
 
         {/* Page des activités pour chaque année */}
@@ -41,6 +45,8 @@ const App = () => {
         {/* Page contact */}
         <Route path="/contact" element={<Contact />} />
 
+        
+        <Route path="/concours2" element={< MultiplicationSelector/>} />
         <Route path="/concours" element={<MultiplicationContestJson4 />} />
 
       </Routes>

@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.bookContainer {
+  perspective: 2500px;
+  width: 920px;
+  height: 640px;
+  position: relative;
+  z-index: 10;
+}
+
+.book {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  display: flex;
+  filter: drop-shadow(0 20px 60px rgba(0,0,0,0.4));
+}
+
+.page {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to bottom, #fffef9 0%, #fff8e7 100%);
+  transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform-origin: left center;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 0 8px 8px 0;
+}
+
+.leftSide {
+  left: 0;
+  border-right: 3px solid #e0d5b7;
+  border-radius: 8px 0 0 8px;
+  background: linear-gradient(to right, #f5f0e1 0%, #fffef9 10%, #fffef9 100%);
+}
+
+.rightSide {
+  left: 50%;
+  border-left: 3px solid #e0d5b7;
+  background: linear-gradient(to left, #f5f0e1 0%, #fffef9 10%, #fffef9 100%);
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 29px,
+    rgba(200, 200, 200, 0.1) 29px,
+    rgba(200, 200, 200, 0.1) 30px
+  );
+  pointer-events: none;
+}
+
+.pageContent {
+  width: 100%;
+  height: 100%;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pageText {
+  text-align: justify;
+  line-height: 2;
+  font-size: 18px;
+  color: #2c3e50;
+  width: 100%;
+  font-family: 'Georgia', serif;
+}
+
+.pageText h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #667eea;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(102, 126, 234, 0.2);
+  font-family: 'Comic Sans MS', cursive;
+  position: relative;
+}
+
+.pageText h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.pageText p {
+  text-indent: 30px;
+}
+
+.pageImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #e8f4f8 0%, #d4e9f7 100%);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pageImage img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+}
+
+.cover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover::before {
+  content: '✨';
+  position: absolute;
+  font-size: 100px;
+  opacity: 0.1;
+  top: 10%;
+  left: 10%;
+  animation: float 5s ease-in-out infinite;
+}
+
+.cover::after {
+  content: '📚';
+  position: absolute;
+  font-size: 100px;
+  opacity: 0.1;
+  bottom: 10%;
+  right: 10%;
+  animation: float 4s ease-in-out infinite reverse;
+}
+
+.cover h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+  animation: pulse 2s ease-in-out infinite;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.cover p {
+  font-size: 22px;
+  font-style: italic;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.emojiDecoration {
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-30px) scale(1.05); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@media (max-width: 768px) {
+  .bookContainer {
+    width: 100%;
+    height: 500px;
+  }
+
+  .pageContent {
+    padding: 30px 20px;
+  }
+
+  .pageText {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .pageText h2 {
+    font-size: 24px;
+  }
+
+  .cover h1 {
+    font-size: 32px;
+  }
+}
