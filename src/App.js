@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './HeaderFooter/header1';
 import Footer1 from './HeaderFooter/footer';
 import Accueil from './pages/Accueil';
-import Contact from './HeaderFooter/contact';
+//import Contact from './HeaderFooter/contact';
 import Activites from './pages/Annee/Activites';
 import WeeklyNavigator from './pages/HSI/2eAnnee/texteCompreh/WeeklyNavigator';
 import WeeklyNavigator3 from './pages/HSI/3eAnnee/textComprehen/WeeklyNavigator3';
@@ -18,6 +18,8 @@ import MultiplicationContestJson4 from './pages/HSI/2eAnnee/maths/multiple';
 //import JeuTablesMUI from './pages/HSI/2eAnnee/maths/mutlication1_12';
 //import JeuTablesSelector from './pages/HSI/2eAnnee/maths/MultiplicationSelector';
 import MultiplicationSelector from './pages/HSI/2eAnnee/maths/MultiplicationSelector';
+import AnimalClassifier from './pages/HSI/2eAnnee/science/classification';
+import MultiplicationChallenge from './pages/HSI/2eAnnee/maths/concourMaths';
 
 const App = () => {
   return (
@@ -35,6 +37,7 @@ const App = () => {
 
         {/* Cas spécial : 2e Année + Français */}
         <Route path="/activites/2e Année/Francais" element={<WeeklyNavigator />} />
+         <Route path="/activites/2e Année/sciences" element={<AnimalClassifier />} />
         <Route path="/activites/3e Année/Francais" element={<WeeklyNavigator3 />} />
         <Route path="/activites/4e Année/Francais" element={<WeeklyNavigator4 />} />
         
@@ -43,7 +46,7 @@ const App = () => {
         
 
         {/* Page contact */}
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<MultiplicationChallenge />} />
 
         
         <Route path="/concours2" element={< MultiplicationSelector/>} />

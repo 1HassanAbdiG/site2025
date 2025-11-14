@@ -53,7 +53,7 @@ const Header = () => {
 
 
              <li>
-              <Link to="/contact" onClick={closeMenu}>Contact</Link>
+              <Link to="/contact" onClick={closeMenu}>Exemple Concours</Link>
             </li>
           </ul>
         </nav>

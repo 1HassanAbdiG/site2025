@@ -57,25 +57,27 @@ const Activite = () => {
           </Link>
         </div>
 
-        {/* 🎮 Autre / Jeux éducatifs */}
+        {/* 🔬 Sciences */}
         <div className={`${styles.card} ${cardsVisible ? styles.cardVisible : ""}`}>
           <svg viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="45" fill="#FF9800" opacity="0.2" />
-            <path d="M35 35 L65 35 L50 65 Z" fill="#FF9800" opacity="0.5" />
-            <circle cx="50" cy="45" r="15" fill="none" stroke="#FF9800" strokeWidth="3" />
-            <text x="50" y="85" textAnchor="middle" fill="#FF9800" fontSize="12">
-              Jeux
+            <circle cx="50" cy="50" r="45" fill="#4CAF50" opacity="0.2" />
+            <path d="M45 30 L55 30 L60 45 L50 70 L40 45 Z" fill="#4CAF50" opacity="0.4" />
+            <circle cx="50" cy="40" r="10" fill="none" stroke="#4CAF50" strokeWidth="3" />
+            <text x="50" y="85" textAnchor="middle" fill="#4CAF50" fontSize="12">
+              Sciences
             </text>
           </svg>
-          <h2>Jeux Éducatifs</h2>
+
+          <h2>Sciences</h2>
           <p>
-            Apprenez en vous amusant avec des jeux éducatifs interactifs.
-            Relevez des défis et gagnez des points !
+            Explore les sciences à travers des exercices, des activités ludiques et des jeux interactifs.
           </p>
-          <Link to={`/activites/${annee}/Autre`} className={styles.button}>
-            Jouer
+
+          <Link to={`/activites/${annee}/sciences`} className={styles.button}>
+            Accéder
           </Link>
         </div>
+
       </div>
     </div>
   );

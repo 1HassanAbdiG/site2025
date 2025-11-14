@@ -190,11 +190,13 @@
             </div>
             <div class="input-group">
                 <label>Ton prénom</label>
-                <input type="text" id="nom" placeholder="Ex: Marie">
+                <input type="text" id="nom" placeholder="Ex: Ahmed">
             </div>
             <div class="input-group">
                 <label>Ta classe</label>
-                <input type="text" id="classe" placeholder="Ex: CM1">
+            
+                <input type="number" id="classe" placeholder="Ex: 5" min="1" max="12" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+
             </div>
             <button class="btn" id="btn-commencer">Commencer !</button>
         </div>
