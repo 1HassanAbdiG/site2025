@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "title": "Évaluation : Le Mauvais Gardien ",
+    "grade": "Grade :4e/5e",
+    "totalPoints": 25
+  },
+  "texte": "Un jour, la mère de Simon, un garçon simple d'esprit, devait aller à la rivière pour faire la lessive. Cependant, cela signifiait qu'elle ne pourrait pas s'occuper de la maison durant son absence. Elle a décidé de confier à Simon le soin de la maison. Il réussissait habituellement à faire ce qu'on lui demandait, même s'il était simple d'esprit et un peu lunatique.\n\n« Simon, lui a dit sa mère, je vais à la rivière pour laver nos vêtements et je ne reviendrai pas avant une heure ou deux. S'il te plaît, surveille la porte durant mon absence. Un voleur pourrait l'ouvrir et entrer dans notre maison. »\n\n« Oui, maman », a acquiescé le garçon obéissant. Durant la première heure, Simon s'est contenté de demeurer à l'intérieur ou à l'extérieur de la maison, mais il surveillait constamment la porte. Après la deuxième heure, cependant, il s'est senti fatigué. Il a décidé de descendre à la rivière pour voir ce qui retenait sa mère aussi longtemps.\n\nComme sa mère lui avait dit d'avoir un œil sur la porte, Simon ne pouvait pas la laisser sans surveillance et aller voir sa mère. Il était pris dans un dilemme. Soudain, il a eu une idée. En quelques minutes, il a enlevé la porte de sa charnière, l'a hissée sur son dos et a marché péniblement vers la rivière.\n\nAussitôt que sa mère l'a aperçu, elle s'est écriée : « Simon, qu'est-ce que tu fais ici ? Ne t'ai-je pas demandé de surveiller la porte ? »\n\n« Oh, ne t'en fais pas, maman », a répondu Simon tout heureux. « Je l'ai apportée. »",
+  "texte2": "1. Je devais finir mes devoirs avant de jouer.\n2. Nous allons aller au parc cet après-midi.\n3. Elle va revenir de vacances demain.\n4. Le professeur doit surveiller la classe pendant l’examen.\n5. Simon apporte la porte jusqu’à la rivière.",
+  "sections": {
+    "vraiFaux": [
+      {
+        "id": "vf1",
+        "text": "La mère de Simon devait aller au marché."
+      },
+      {
+        "id": "vf2",
+        "text": "Simon est un garçon obéissant."
+      },
+      {
+        "id": "vf3",
+        "text": "Simon a laissé la porte sans surveillance pour aller voir sa mère."
+      },
+      {
+        "id": "vf4",
+        "text": "La mère s'inquiétait qu'un voleur puisse entrer dans la maison."
+      },
+      {
+        "id": "vf5",
+        "text": "Simon était simple d'esprit et un peu lunatique."
+      }
+    ],
+    "qcmTexte": [
+      {
+        "id": "qcmT1",
+        "question": "Quelle était la tâche confiée à Simon ?",
+        "options": [
+          {
+            "k": "a",
+            "t": "Faire la lessive."
+          },
+          {
+            "k": "b",
+            "t": "Surveiller la porte de la maison."
+          },
+          {
+            "k": "c",
+            "t": "Préparer le repas."
+          }
+        ]
+      },
+      {
+        "id": "qcmT2",
+        "question": "Où la mère de Simon est-elle allée ?",
+        "options": [
+          {
+            "k": "a",
+            "t": "Au village voisin."
+          },
+          {
+            "k": "b",
+            "t": "À la rivière."
+          },
+          {
+            "k": "c",
+            "t": "À la maison d'une amie."
+          }
+        ]
+      },
+      {
+        "id": "qcmT3",
+        "question": "Combien de temps environ la mère devait-elle s'absenter ?",
+        "options": [
+          {
+            "k": "a",
+            "t": "Cinq minutes."
+          },
+          {
+            "k": "b",
+            "t": "Une heure ou deux."
+          },
+          {
+            "k": "c",
+            "t": "Toute la journée."
+          }
+        ]
+      },
+      {
+        "id": "qcmT4",
+        "question": "Pourquoi Simon a-t-il décidé d'aller à la rivière ?",
+        "options": [
+          {
+            "k": "a",
+            "t": "Il s'ennuyait et voulait jouer."
+          },
+          {
+            "k": "b",
+            "t": "Il voulait voir ce qui retenait sa mère."
+          },
+          {
+            "k": "c",
+            "t": "Il cherchait un voleur près de l'eau."
+          }
+        ]
+      },
+      {
+        "id": "qcmT5",
+        "question": "Comment Simon a-t-il 'surveillé' la porte jusqu'à la rivière ?",
+        "options": [
+          {
+            "k": "a",
+            "t": "Il l'a laissée et est revenu en courant."
+          },
+          {
+            "k": "b",
+            "t": "Il l'a enlevée et l'a portée sur son dos."
+          },
+          {
+            "k": "c",
+            "t": "Il l'a enfermée à clé."
+          }
+        ]
+      }
+    ],
+    "qcmVocab": [
+      {
+        "id": "qcmV1",
+        "question": "Que signifie 'acquiescé' ?",
+        "options": [
+          {
+            "k": "a",
+            "t": "Dit non, refusé."
+          },
+          {
+            "k": "b",
+            "t": "Dit oui, accepté."
+          },
+          {
+            "k": "c",
+            "t": "Couru vite."
+          }
+        ]
+      },
+      {
+        "id": "qcmV2",
+        "question": "Par quel mot peut-on remplacer 'lunatique' ?",
+        "options": [
+          {
+            "k": "a",
+            "t": "Calme"
+          },
+          {
+            "k": "b",
+            "t": "Intelligent"
+          },
+          {
+            "k": "c",
+            "t": "Changeant, d'humeur variable"
+          }
+        ]
+      },
+      {
+        "id": "qcmV3",
+        "question": "Quel mot est synonyme de 'dilemme' ?",
+        "options": [
+          {
+            "k": "a",
+            "t": "Jeu"
+          },
+          {
+            "k": "b",
+            "t": "Choix difficile"
+          },
+          {
+            "k": "c",
+            "t": "Grande joie"
+          }
+        ]
+      },
+      {
+        "id": "qcmV4",
+        "question": "Que signifie 'hissée' ?",
+        "options": [
+          {
+            "k": "a",
+            "t": "Laisser tomber."
+          },
+          {
+            "k": "b",
+            "t": "Soulever avec effort."
+          },
+          {
+            "k": "c",
+            "t": "Nettoyer rapidement."
+          }
+        ]
+      },
+      {
+        "id": "qcmV5",
+        "question": "Quel mot peut remplacer 'simple d'esprit' ?",
+        "options": [
+          {
+            "k": "a",
+            "t": "Très futé"
+          },
+          {
+            "k": "b",
+            "t": "Naïf, un peu simple"
+          },
+          {
+            "k": "c",
+            "t": "Expert"
+          }
+        ]
+      }
+    ],
+    "relier": [
+      {
+        "id": "rel1",
+        "sujet": "La mère"
+      },
+      {
+        "id": "rel2",
+        "sujet": "Simon"
+      },
+      {
+        "id": "rel3",
+        "sujet": "La porte"
+      },
+      {
+        "id": "rel4",
+        "sujet": "Le voleur"
+      },
+      {
+        "id": "rel5",
+        "sujet": "La rivière"
+      }
+    ],
+    "relierOptions": [
+      {
+        "id": "optA",
+        "text": "Il l’a portée sur son dos."
+      },
+      {
+        "id": "optB",
+        "text": "Elle est partie laver le linge."
+      },
+      {
+        "id": "optC",
+        "text": "Il est simple d’esprit et obéissant."
+      },
+      {
+        "id": "optD",
+        "text": "Celui que la mère redoutait."
+      },
+      {
+        "id": "optE",
+        "text": "L’endroit où se trouvait la mère."
+      }
+    ],
+
+    "verbesATrouver": [
+      "devais",
+      "allons",
+      "va",
+      "doit",
+      "apporte"
+    ],
+   "conjugaison": [
+  {
+    "id": "conj1",
+    "phrase": "Elle (devoir) aller à la rivière. (Présent)"
+  },
+  {
+    "id": "conj2",
+    "phrase": "Je (revenir) dans une heure ou deux. (Présent)"
+  },
+  {
+    "id": "conj3",
+    "phrase": "Simon (acquiescer) obéissant. (Présent)"
+  },
+  {
+    "id": "conj4",
+    "phrase": "Nous (surveiller) la maison. (Présent)"
+  },
+  {
+    "id": "conj5",
+    "phrase": "Il (se sentir) fatigué après la deuxième heure. (Présent)"
+  }
+],
+    "answers": {
+      "vraiFaux": {
+        "vf1": "faux",
+        "vf2": "vrai",
+        "vf3": "faux",
+        "vf4": "vrai",
+        "vf5": "vrai"
+      },
+      "qcmTexte": {
+        "qcmT1": "b",
+        "qcmT2": "b",
+        "qcmT3": "b",
+        "qcmT4": "b",
+        "qcmT5": "b"
+      },
+      "qcmVocab": {
+        "qcmV1": "b",
+        "qcmV2": "c",
+        "qcmV3": "b",
+        "qcmV4": "b",
+        "qcmV5": "b"
+      },
+      "relier": {
+        "rel1": "optB",
+        "rel2": "optC",
+        "rel3": "optA",
+        "rel4": "optD",
+        "rel5": "optE"
+      },
+      "verbesATrouver": [
+        "devais",
+        "allons",
+        "va",
+        "doit",
+        "apporte"
+      ],
+      "conjugaison": {
+        "conj1": "doit",
+        "conj2": "reviens",
+        "conj3": "acquiesce",
+        "conj4": "surveillons",
+        "conj5": "se sent"
+      }   
+    }
+  }
+}

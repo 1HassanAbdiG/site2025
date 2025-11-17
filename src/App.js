@@ -20,6 +20,7 @@ import MultiplicationContestJson4 from './pages/HSI/2eAnnee/maths/multiple';
 import MultiplicationSelector from './pages/HSI/2eAnnee/maths/MultiplicationSelector';
 import AnimalClassifier from './pages/HSI/2eAnnee/science/classification';
 import MultiplicationChallenge from './pages/HSI/2eAnnee/maths/concourMaths';
+import EvaluationFrancais from './pages/HSI/5eAnnee/EvaluationFrancais';
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
          <Route path="/activites/2e Année/sciences" element={<AnimalClassifier />} />
         <Route path="/activites/3e Année/Francais" element={<WeeklyNavigator3 />} />
         <Route path="/activites/4e Année/Francais" element={<WeeklyNavigator4 />} />
+        <Route path="/activites/5e Année/Francais" element={<EvaluationFrancais />} />
         
         
         

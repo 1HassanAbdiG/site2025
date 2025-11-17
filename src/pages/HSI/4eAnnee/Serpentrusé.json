@@ -1,0 +1,156 @@
+{
+  "title": "Un serpent rusé",
+  "text": "Un serpent était devenu vieux et frêle. Il réfléchissait à un plan pour attraper des grenouilles facilement. Il s'est étendu près d'un étang où plusieurs grenouilles vivaient. Il faisait semblant d'être malade. Curieuse, l'une des grenouilles est venue lui demander ce qu'il avait.\n\n« J'ai mordu la cheville d'un saint. Cependant, il n'est pas mort. À la place, il m'a jeté un mauvais sort, a dit le serpent. Il m'a dit que j'allais transporter des grenouilles sur mon dos, mais que je serais incapable de les manger. »\n\nEn entendant cela, la grenouille est retournée voir ses amies. Elle les a invitées à venir faire une promenade sur le dos du serpent. Toutes les grenouilles sont venues et ont fait la queue pour vivre l'aventure excitante d'une promenade sur le dos d'un serpent.\n\nLe serpent a transporté le plus de grenouilles qu'il a pu sur son long dos. Il les a emmenées si loin que personne ne les voyait. Puis, il les a toutes mangées. Ensuite, il est retourné chercher d'autres passagères. Il leur disait que les grenouilles étaient dans un endroit où il y avait beaucoup d'insectes à manger. Il les a toutes mangées aussi.\n\nIl a ensuite continué à promener des grenouilles. Il les a toutes mangées, jusqu'à la dernière.",
+  "sections": [
+    {
+      "id": "vraiFaux",
+      "label": "✓/✗ Vrai/Faux",
+      "type": "boolean",
+      "questions": [
+        { "q": "Le serpent était vieux et faible.", "a": true },
+        { "q": "Le serpent faisait semblant d’être malade.", "a": true },
+        { "q": "Le saint a tué le serpent.", "a": false },
+        { "q": "Les grenouilles voulaient faire une promenade sur son dos.", "a": true },
+        { "q": "Le serpent n'a mangé aucune grenouille.", "a": false }
+      ]
+    },
+    {
+      "id": "qcm",
+      "label": "📝 QCM",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Pourquoi le serpent s'est-il allongé près de l'étang ?",
+          "options": ["Pour dormir", "Pour se cacher", "Pour attraper des grenouilles", "Pour jouer"],
+          "a": "Pour attraper des grenouilles"
+        },
+        {
+          "q": "Pourquoi les grenouilles croyaient-elles au serpent ?",
+          "options": ["Il semblait malade", "Il était gentil", "Il leur donnait de la nourriture", "Elles le connaissaient bien"],
+          "a": "Il semblait malade"
+        },
+        {
+          "q": "Que disait le serpent aux grenouilles ?",
+          "options": [
+            "Qu'il allait les protéger",
+            "Qu’un saint lui avait jeté un sort",
+            "Qu’il ne mangeait plus d’insectes",
+            "Qu’il voulait devenir leur ami"
+          ],
+          "a": "Qu’un saint lui avait jeté un sort"
+        },
+        {
+          "q": "Que faisait réellement le serpent pendant la promenade ?",
+          "options": ["Il les déposait ailleurs", "Il les emmenait dans un autre étang", "Il les mangeait", "Il les aidait"],
+          "a": "Il les mangeait"
+        },
+        {
+          "q": "Combien de grenouilles le serpent a-t-il mangées ?",
+          "options": ["Aucune", "Seulement quelques-unes", "Toutes", "Deux ou trois"],
+          "a": "Toutes"
+        }
+      ]
+    },
+    {
+      "id": "vocabulaire",
+      "label": "📚 Vocabulaire",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Que signifie « frêle » ?",
+          "options": ["Très fort", "Très faible", "Très rapide", "Très bruyant"],
+          "a": "Très faible"
+        },
+        {
+          "q": "Que veut dire « attraper » ?",
+          "options": ["Libérer", "Saisir", "Cacher", "Perdre"],
+          "a": "Saisir"
+        },
+        {
+          "q": "Quel mot correspond à « ruser » ?",
+          "options": ["Être honnête", "Tromper", "Attendre", "Dormir"],
+          "a": "Tromper"
+        },
+        {
+          "q": "Que signifie « un sort » ?",
+          "options": ["Une blessure", "Une malédiction", "Un jouet", "Un repas"],
+          "a": "Une malédiction"
+        },
+        {
+          "q": "Quel mot est un synonyme de « promenade » ?",
+          "options": ["Balade", "Course", "Travail", "Repos"],
+          "a": "Balade"
+        }
+      ]
+    },
+    {
+      "id": "conjugaison",
+      "label": "🕓 Conjugaison – Présent (1er et 2e groupe)",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Conjugue « manger » au présent – il :",
+          "options": ["Il mange", "Il mangera", "Il mangait", "Il mangent"],
+          "a": "Il mange"
+        },
+        {
+          "q": "Conjugue « finir » au présent – nous :",
+          "options": ["Nous finissons", "Nous finis", "Nous finirons", "Nous finissions"],
+          "a": "Nous finissons"
+        },
+        {
+          "q": "Conjugue « marcher » au présent – elles :",
+          "options": ["Elles marchent", "Elles marcheront", "Elles marchaient", "Elles marché"],
+          "a": "Elles marchent"
+        },
+        {
+          "q": "Conjugue « choisir » au présent – tu :",
+          "options": ["Tu choisis", "Tu choisit", "Tu choisiras", "Tu choisissais"],
+          "a": "Tu choisis"
+        },
+        {
+          "q": "Conjugue « transporter » au présent – je :",
+          "options": ["Je transporte", "Je transportait", "Je transporterai", "J'ai transporté"],
+          "a": "Je transporte"
+        }
+      ]
+    },
+    {
+      "id": "grammaire",
+      "label": "📘 Grammaire",
+      "type": "multiple",
+      "questions": [
+        {
+          "q": "Quelle est la nature de cette phrase : « Le serpent mange les grenouilles. » ?",
+          "options": ["Phrase interrogative", "Phrase déclarative", "Phrase exclamative", "Phrase impérative"],
+          "a": "Phrase déclarative"
+        },
+        {
+          "q": "La phrase : « Le serpent ne peut plus manger. » est :",
+          "options": ["Positive", "Négative"],
+          "a": "Négative"
+        },
+        {
+          "q": "Trouve la phrase interrogative :",
+          "options": [
+            "Le serpent transporte des grenouilles.",
+            "Pourquoi fait-il semblant d’être malade ?",
+            "Il est très vieux.",
+            "Les grenouilles accourent."
+          ],
+          "a": "Pourquoi fait-il semblant d’être malade ?"
+        },
+        {
+          "q": "Transforme en phrase positive : « Le serpent ne dit pas la vérité. »",
+          "options": ["Le serpent dit la vérité.", "Le serpent ne dit pas.", "Le serpent dira la vérité.", "Le serpent disait la vérité."],
+          "a": "Le serpent dit la vérité."
+        },
+        {
+          "q": "Quel type de phrase exprime une émotion forte ?",
+          "options": ["Déclarative", "Interrogative", "Exclamative", "Impérative"],
+          "a": "Exclamative"
+        }
+      ]
+    }
+  ]
+}

@@ -7,15 +7,26 @@
       "children": [
         {
           "id": "FrenchReadingQuizVisiteur",
-          "label": "Le Visiteur Masqué",          
-          "component": "FrenchReadingQuiz",
+          "label": "Le Visiteur Masqué",
+          "component": "FrenchReadingQuiz21",
           "quizFile": "visiteur.json"
         },
         {
           "id": "FrenchReadingQuizAmbition",
-          "label": "L'Ambition de Gagner",          
+          "label": "L'Ambition de Gagner",
           "component": "FrenchReadingQuiz",
           "quizFile": "ambition.json"
+        },
+        {
+          "id": "FrenchReadingQuizMauvaisGardien",
+          "label": "Le mauvais gardien",
+          "component": "FrenchReadingQuiz3",
+          "quizFile": "Lemauvaisgardien.json"
+        },{
+          "id": "FrenchReadingQuizSerpentrusé",
+          "label": "Un Serpentrusé",
+          "component": "FrenchReadingQuiz4",
+          "quizFile": "Lemauvaisgardien.json"
         }
       ]
     },

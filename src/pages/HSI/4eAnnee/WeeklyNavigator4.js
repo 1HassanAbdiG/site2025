@@ -12,6 +12,10 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import menuData from "./menuSemaine.json";
 import FrenchReadingQuiz from "./FrenchReadingQuiz";
+import FrenchReadingQuiz21 from "./FrenchReadingQuiz21";
+import FrenchReadingQuiz3 from "./FrenchReadingQuiz3";
+import FrenchReadingQuiz4 from "./FrenchReadingQuiz4";
+
 import DicteeInteractive from "./dictee/DicteeComponent";
 import HistoireSemaine from "./histoire/histoire"
 const WeeklyOverview = () => (
@@ -51,6 +55,9 @@ const WeeklyOverview = () => (
 
 const componentsMap = {
   FrenchReadingQuiz,
+  FrenchReadingQuiz21,
+  FrenchReadingQuiz3,
+  FrenchReadingQuiz4,
   DicteeInteractive,
   HistoireSemaine
 
