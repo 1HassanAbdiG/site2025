@@ -21,6 +21,7 @@ import MultiplicationSelector from './pages/HSI/2eAnnee/maths/MultiplicationSele
 import AnimalClassifier from './pages/HSI/2eAnnee/science/classification';
 import MultiplicationChallenge from './pages/HSI/2eAnnee/maths/concourMaths';
 import EvaluationFrancais from './pages/HSI/5eAnnee/EvaluationFrancais';
+import MultiplicationChallengeOK from './pages/HSI/2eAnnee/maths/concourMathsOK';
 
 const App = () => {
   return (
@@ -53,6 +54,7 @@ const App = () => {
         
         <Route path="/concours2" element={< MultiplicationSelector/>} />
         <Route path="/concours" element={<MultiplicationContestJson4 />} />
+        <Route path="/concours3" element={< MultiplicationChallengeOK/>} />
 
       </Routes>
 
