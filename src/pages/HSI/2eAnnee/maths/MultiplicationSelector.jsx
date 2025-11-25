@@ -2,12 +2,39 @@ import React, { useState } from "react";
 import { Box, Button, Typography } from "@mui/material";
 import { blue, green, orange } from "@mui/material/colors";
 
+
+
+
+
 // Import des 3 composants
 import Multiplication10 from "./mutlication10";
 import Multiplication12 from "./mutlication12";
 import Multiplication15 from "./mutlication15";
 import Multiplication20 from "./mutlication20";
 import Multiplication5 from "./mutlication5"
+import MultiplicationRevision from "./Table";
+import PdfViewerMenu from "./pdf";
+const styles = {
+    pdfLinkArea: {
+        marginTop: "20px",
+        textAlign: "center",
+    },
+    pdfLink: {
+        display: "inline-block",
+        padding: "10px 20px",
+        backgroundColor: "#3f51b5",
+        color: "white",
+        borderRadius: "8px",
+        textDecoration: "none",
+        transition: "0.3s",
+        fontWeight: "bold",
+    },
+    pdfLinkHover: {
+        backgroundColor: "#303f9f",
+        transform: "scale(1.05)",
+    }
+};
+
 
 export default function MultiplicationSelector() {
     const [selectedGame, setSelectedGame] = useState(null);
@@ -17,8 +44,8 @@ export default function MultiplicationSelector() {
     const texts = {
         fr: {
             title: "Choisis la plage de multiplication",
-             range_0: "1 to 5",
-             range_1: "1 to 10",
+            range_0: "1 to 5",
+            range_1: "1 to 10",
             range_2: "1 to 12",
             range_3: "1 to 15",
             range_4: "1 to 20",
@@ -37,7 +64,7 @@ export default function MultiplicationSelector() {
 
     const renderGame = () => {
         switch (selectedGame) {
-             case "1-5":
+            case "1-5":
                 return <Multiplication5 lang={lang} />;
             case "1-10":
                 return <Multiplication10 lang={lang} />;
@@ -45,7 +72,7 @@ export default function MultiplicationSelector() {
                 return <Multiplication12 lang={lang} />;
             case "1-15":
                 return <Multiplication15 lang={lang} />;
-                case "1-20":
+            case "1-20":
                 return <Multiplication20 lang={lang} />;
             default:
                 return null;
@@ -53,7 +80,7 @@ export default function MultiplicationSelector() {
     };
 
     return (
-        <Box sx={{ minHeight: "100vh", p: 3, background: "#f0f7ff"  ,}}>
+        <Box sx={{ minHeight: "100vh", p: 3, background: "#f0f7ff", }}>
             {/* Switch langue */}
             <Button
                 variant="contained"
@@ -151,6 +178,25 @@ export default function MultiplicationSelector() {
 
             {/* Affichage du jeu sélectionné */}
             <Box sx={{ mt: 4 }}>{renderGame()}</Box>
+            <MultiplicationRevision></MultiplicationRevision>
+            {/* --- NOUVELLE SECTION PDF --- */}
+            <div style={styles.pdfLinkArea}>
+                <p style={{ color: '#3f51b5', fontWeight: 'bold', marginBottom: '10px' }}>
+                    Téléchargez votre ressource ultime pour la révision ! 📚
+                </p>
+
+                <a
+                    href="/mutiplicationeng33.pdf" // Chemin dans 'public'
+                    rel="noopener noreferrer"
+                    style={styles.pdfLink}
+                    onMouseEnter={(e) => Object.assign(e.currentTarget.style, styles.pdfLinkHover)}
+                    onMouseLeave={(e) => Object.assign(e.currentTarget.style, styles.pdfLink)}
+                >
+                    ⬇️ Télécharger le PDF Récapitulatif
+                </a>
+            </div>
+            <PdfViewerMenu></PdfViewerMenu>
+
         </Box>
     );
 }

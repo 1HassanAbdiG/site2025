@@ -18,12 +18,15 @@ import {
     Avatar,
     Select,
     MenuItem,
+
     Stack
 } from '@mui/material';
+//import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+//import CancelIcon from '@mui/icons-material/Cancel';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 
-import quizData from './quizData.json';
+import quizData from './mauvaisGardien.json';
 import BilanEvaluation from './BilanEvaluation';
 
 export default function EvaluationFrancaisPro() {
@@ -84,16 +87,12 @@ export default function EvaluationFrancaisPro() {
         setSubmitted(true);
     };
 
-    const progress = useMemo(() => {
-        return Math.round((
-            Object.keys(state.vraiFaux).length +
-            Object.keys(state.qcmTexte).length +
-            Object.keys(state.qcmVocab).length +
-            Object.keys(state.relier).length +
-            state.verbes.length +
-            Object.keys(state.conjugaison).length
-        ) / totalPossible * 100);
-    }, [state, totalPossible]); // ✅ totalPossible ajouté aux dépendances
+    const progress = useMemo(() => Math.round((Object.keys(state.vraiFaux).length
+        + Object.keys(state.qcmTexte).length
+        + Object.keys(state.qcmVocab).length
+        + Object.keys(state.relier).length
+        + state.verbes.length
+        + Object.keys(state.conjugaison).length) / totalPossible * 100), [state, totalPossible]);
 
     const cardColors = {
         vraiFaux: '#d0f0c0',
@@ -107,14 +106,11 @@ export default function EvaluationFrancaisPro() {
     return (
         <Container maxWidth="md" sx={{ py: 6 }}>
             <Card sx={{ borderRadius: 3, boxShadow: 6, overflow: 'hidden' }}>
-                {/* Header */}
                 <Box sx={{ background: 'linear-gradient(90deg,#6a11cb,#2575fc)', color: '#fff', p: 3 }}>
                     <Stack direction="row" alignItems="center" justifyContent="space-between">
                         <Stack>
                             <Typography variant="h4" sx={{ fontWeight: 900 }}>{quizData.meta.title}</Typography>
-                            <Typography variant="body1" sx={{ opacity: 0.9 }}>
-                                {quizData.meta.grade} • {quizData.meta.totalPoints} pts
-                            </Typography>
+                            <Typography variant="body1" sx={{ opacity: 0.9 }}>{quizData.meta.grade} • {quizData.meta.totalPoints} pts</Typography>
                         </Stack>
                         <Avatar sx={{ bgcolor: 'rgba(255,255,255,0.2)', width: 64, height: 64 }}>
                             <EmojiEventsIcon fontSize="large" />
@@ -126,25 +122,17 @@ export default function EvaluationFrancaisPro() {
                     {/* Texte à lire */}
                     <Card sx={{ p: 3, mb: 3, borderRadius: 3, background: '#e3f2fd' }}>
                         <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: '#0d47a1' }}>📖 Texte à lire</Typography>
-                        <Typography variant="body1" sx={{ textAlign: 'justify', fontSize: '1.1rem' }}>
-                            {quizData.texte}
-                        </Typography>
+                        <Typography variant="body1" sx={{ textAlign: 'justify', fontSize: '1.1rem' }}>{quizData.texte}</Typography>
                     </Card>
 
-                    {/* 1️⃣ Vrai / Faux */}
+                    {/* 1️⃣ Vrai/Faux */}
                     <Card sx={{ p: 3, mb: 3, borderRadius: 3, background: cardColors.vraiFaux }}>
                         <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: '#006400' }}>1️⃣ Vrai / Faux</Typography>
                         {quizData.sections.vraiFaux.map((q, i) => (
                             <Box key={q.id} sx={{ my: 1.5, p: 1.5, background: '#fff', borderRadius: 2 }}>
                                 <FormControl component="fieldset">
-                                    <FormLabel component="legend" sx={{ fontWeight: 'bold', fontSize: '1.1rem' }}>
-                                        {i + 1}. {q.text}
-                                    </FormLabel>
-                                    <RadioGroup
-                                        row
-                                        value={state.vraiFaux[q.id] || ''}
-                                        onChange={(e) => handleChange('vraiFaux', q.id, e.target.value)}
-                                    >
+                                    <FormLabel component="legend" sx={{ fontWeight: 'bold', fontSize: '1.1rem' }}>{i + 1}. {q.text}</FormLabel>
+                                    <RadioGroup row value={state.vraiFaux[q.id] || ''} onChange={(e) => handleChange('vraiFaux', q.id, e.target.value)}>
                                         <FormControlLabel value="vrai" control={<Radio />} label="Vrai" disabled={submitted} />
                                         <FormControlLabel value="faux" control={<Radio />} label="Faux" disabled={submitted} />
                                     </RadioGroup>
@@ -160,10 +148,7 @@ export default function EvaluationFrancaisPro() {
                             <Box key={q.id} sx={{ my: 1.5, p: 1.5, background: '#fff', borderRadius: 2 }}>
                                 <FormControl>
                                     <FormLabel sx={{ fontWeight: 'bold', fontSize: '1.1rem' }}>{q.question}</FormLabel>
-                                    <RadioGroup
-                                        value={state.qcmTexte[q.id] || ''}
-                                        onChange={(e) => handleChange('qcmTexte', q.id, e.target.value)}
-                                    >
+                                    <RadioGroup value={state.qcmTexte[q.id] || ''} onChange={(e) => handleChange('qcmTexte', q.id, e.target.value)}>
                                         {q.options.map(o => (
                                             <FormControlLabel key={o.k} value={o.k} control={<Radio />} label={`${o.k}) ${o.t}`} disabled={submitted} />
                                         ))}
@@ -180,10 +165,7 @@ export default function EvaluationFrancaisPro() {
                             <Box key={q.id} sx={{ my: 1.5, p: 1.5, background: '#fff', borderRadius: 2 }}>
                                 <FormControl>
                                     <FormLabel sx={{ fontWeight: 'bold', fontSize: '1.1rem' }}>{q.question}</FormLabel>
-                                    <RadioGroup
-                                        value={state.qcmVocab[q.id] || ''}
-                                        onChange={(e) => handleChange('qcmVocab', q.id, e.target.value)}
-                                    >
+                                    <RadioGroup value={state.qcmVocab[q.id] || ''} onChange={(e) => handleChange('qcmVocab', q.id, e.target.value)}>
                                         {q.options.map(o => (
                                             <FormControlLabel key={o.k} value={o.k} control={<Radio />} label={`${o.k}) ${o.t}`} disabled={submitted} />
                                         ))}
@@ -194,32 +176,53 @@ export default function EvaluationFrancaisPro() {
                     </Card>
 
                     {/* 4️⃣ Relier */}
+                    {/* 4️⃣ Relier */}
+                    {/* 4️⃣ Relier */}
+                    {/* 4️⃣ Relier */}
                     <Card sx={{ p: 3, mb: 3, borderRadius: 3, background: cardColors.relier }}>
-                        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: '#4682b4' }}>4️⃣ Relier</Typography>
+                        <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: '#4682b4' }}>
+                            4️⃣ Relier
+                        </Typography>
+
                         <Grid container spacing={2}>
-                            {quizData.sections.relier.map(item => (
+                            {quizData.sections.relier.map((item) => (
                                 <Grid item xs={12} key={item.id}>
-                                    <Box sx={{
-                                        p: 2,
-                                        background: '#fff',
-                                        borderRadius: 2,
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        justifyContent: 'space-between',
-                                        gap: 3
-                                    }}>
-                                        <Typography variant="body1" sx={{ fontWeight: 600, fontSize: '1.2rem', width: '200px' }}>
+                                    <Box
+                                        sx={{
+                                            p: 2,
+                                         
+                                            background: '#fff',
+                                            borderRadius: 2,
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'space-between',
+                                            gap: 3
+                                        }}
+                                    >
+                                        {/* Texte à gauche */}
+                                        <Typography
+                                            variant="body1"
+                                            sx={{ fontWeight: 600, fontSize: '1.2rem', width: '200px' }}
+                                        >
                                             {item.sujet}
                                         </Typography>
+
+                                        {/* Select à droite */}
                                         <FormControl sx={{ minWidth: 250 }}>
                                             <Select
                                                 value={state.relier[item.id] || ''}
                                                 onChange={(e) => handleChange('relier', item.id, e.target.value)}
                                                 disabled={submitted}
-                                                sx={{ height: 50, fontSize: '1.1rem', borderRadius: 2, background: '#fafafa' }}
+                                                sx={{
+                                                    height: 50,
+                                                    fontSize: '1.1rem',
+                                                    borderRadius: 2,
+                                                    background: '#fafafa'
+                                                }}
                                             >
                                                 <MenuItem value=""><em>Choisir</em></MenuItem>
-                                                {quizData.sections.relierOptions.map(opt => (
+
+                                                {quizData.sections.relierOptions.map((opt) => (
                                                     <MenuItem key={opt.id} value={opt.id} sx={{ fontSize: '1.1rem' }}>
                                                         {opt.text}
                                                     </MenuItem>
@@ -232,12 +235,14 @@ export default function EvaluationFrancaisPro() {
                         </Grid>
                     </Card>
 
+
+
+
                     {/* 5️⃣ Verbes à trouver */}
                     <Card sx={{ p: 3, mb: 3, borderRadius: 3, background: cardColors.verbes }}>
                         <Typography variant="h5" gutterBottom sx={{ fontWeight: 'bold', color: '#ff8c00' }}>5️⃣ Trouver les verbes conjugués</Typography>
-                        <Typography variant="body2" sx={{ mb: 1 }}>
-                            Cliquez sur les mots qui sont des verbes conjugués dans chaque phrase ci-dessous.
-                        </Typography>
+                        <Typography variant="body2" sx={{ mb: 1 }}>Cliquez sur les mots qui sont des verbes conjugués dans chaque phrase ci-dessous.</Typography>
+
                         {quizData.texte2.split('\n').map((phrase, idx) => (
                             <Box key={idx} sx={{ mb: 2, p: 2, background: '#fff', borderRadius: 2 }}>
                                 {phrase.split(' ').map((w, i) => {
@@ -272,10 +277,7 @@ export default function EvaluationFrancaisPro() {
                                             fullWidth
                                             size="small"
                                             value={state.conjugaison[c.id] || ''}
-                                            onChange={(e) => setState(prev => ({
-                                                ...prev,
-                                                conjugaison: { ...prev.conjugaison, [c.id]: e.target.value }
-                                            }))}
+                                            onChange={(e) => setState(prev => ({ ...prev, conjugaison: { ...prev.conjugaison, [c.id]: e.target.value } }))}
                                             disabled={submitted}
                                         />
                                     </Box>
@@ -286,18 +288,9 @@ export default function EvaluationFrancaisPro() {
 
                     {/* Footer / Bilan */}
                     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, mt: 3 }}>
-                        <LinearProgress
-                            variant="determinate"
-                            value={submitted ? (score / totalPossible * 100) : Math.max(progress, 5)}
-                            sx={{ height: 12, borderRadius: 6 }}
-                        />
+                        <LinearProgress variant="determinate" value={submitted ? (score / totalPossible * 100) : Math.max(progress, 5)} sx={{ height: 12, borderRadius: 6 }} />
                         {!submitted ? (
-                            <Button
-                                variant="contained"
-                                size="large"
-                                onClick={calculateScore}
-                                startIcon={<AutoGraphIcon />}
-                            >
+                            <Button variant="contained" size="large" onClick={calculateScore} startIcon={<AutoGraphIcon />}>
                                 Soumettre l'évaluation
                             </Button>
                         ) : (

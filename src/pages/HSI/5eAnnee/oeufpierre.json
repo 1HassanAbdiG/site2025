@@ -1,0 +1,186 @@
+{
+  
+    "meta": {
+      "title": "Évaluation : L'œuf ou la pierre",
+      "grade": "Grade : 4e/5e",
+      "totalPoints": 25
+    },
+    "texte": "Une nuit, un homme sage voyageait à travers une forêt quand il arriva face à un terrible géant. Le géant lui annonça qu’il allait l’éliminer. L’homme lui répondit calmement : « Très bien, essaie si tu veux, mais je vais te vaincre, parce que je suis plus fort que tu l’imagines. »\n\n« C’est un non-sens ! dit le géant. Tu ne peux pas me vaincre, car je suis dix fois plus gros que toi. »\n\n« Si tu veux accomplir une épreuve de force, prends cette pierre et fais-en sortir du liquide », dit le sage en ramassant une petite pierre qu’il donna au géant. Le géant essaya, pressa très fort la pierre, mais aucun liquide n’en sortit.\n\n« C’est impossible à réussir, il n’y a pas d’eau dans une pierre, dit le géant. Montre-moi comment tu fais. » Dans la pénombre, le brave homme sortit un œuf de sa poche et fit semblant de tordre la pierre et l’œuf ensemble, en les couvrant de sa main. Le géant fut impressionné quand il vit du liquide sortir de la pierre.\n\n« Je dois réfléchir à tout ça, dit le géant. Viens à ma caverne et tu pourras y passer la nuit. » L’homme sage accompagna le géant à son énorme caverne. Le géant lui dit où dormir, et il s’endormit lui-même immédiatement.\n\nAussitôt le géant endormi, l’homme se leva. Il savait que le géant le tuerait au milieu de la nuit. Silencieusement, il arrangea le lit de manière à laisser croire qu’il se trouvait encore dedans. Ensuite, il se cacha à une certaine distance du géant.\n\nÀ peine eut-il le temps de se cacher que le géant se réveilla. Il souleva un tronc d’arbre d’une seule main et frappa sept puissants coups sur la silhouette d’homme dans le lit de l’homme sage. Puis, il alla se recoucher et s’endormit. Le sage retourna à son lit, s’étendit et appela le géant. « Hé, géant ! Cette caverne qui est la tienne est confortable, mais j’ai été piqué sept fois par un insecte. Tu devrais réellement faire quelque chose à ce propos. »\n\nCela ébranla le géant à un point tel qu’il n’osa plus attaquer l’homme de nouveau. Immédiatement, le géant s’agenouilla et pria le sage de lui pardonner.",
+    "texte2": "1. Le géant frappe le lit avec force.\n2. Nous dormons dans la caverne sombre.\n3. Tu réfléchis à une solution intelligente.\n4. Ils écrasent la pierre facilement.\n5. Je ruse pour gagner le défi.",
+    "sections": {
+      "vraiFaux": [
+        { "id": "vf1", "text": "L'homme sage prétend être plus fort que le géant." },
+        { "id": "vf2", "text": "Le géant réussit à faire sortir de l'eau de la pierre." },
+        { "id": "vf3", "text": "L'homme utilise un citron pour tromper le géant." },
+        { "id": "vf4", "text": "Le géant frappe le lit avec un tronc d'arbre." },
+        { "id": "vf5", "text": "À la fin, le géant demande pardon au sage." }
+      ],
+      "qcmTexte": [
+        {
+          "id": "qcmT1",
+          "question": "Comment l'homme sage fait-il croire qu'il presse la pierre ?",
+          "options": [
+            { "k": "a", "t": "Il utilise une éponge mouillée." },
+            { "k": "b", "t": "Il utilise un œuf caché dans sa main." },
+            { "k": "c", "t": "Il utilise sa magie." }
+          ]
+        },
+        {
+          "id": "qcmT2",
+          "question": "Pourquoi l'homme sage ne dort-il pas dans le lit ?",
+          "options": [
+            { "k": "a", "t": "Car le lit est inconfortable." },
+            { "k": "b", "t": "Car il sait que le géant va essayer de le tuer." },
+            { "k": "c", "t": "Car il n'est pas fatigué." }
+          ]
+        },
+        {
+          "id": "qcmT3",
+          "question": "Qu'utilise le géant pour frapper le lit ?",
+          "options": [
+            { "k": "a", "t": "Un énorme rocher." },
+            { "k": "b", "t": "Son poing." },
+            { "k": "c", "t": "Un tronc d'arbre." }
+          ]
+        },
+        {
+          "id": "qcmT4",
+          "question": "Que dit l'homme sage après avoir reçu les coups (en faisant semblant) ?",
+          "options": [
+            { "k": "a", "t": "J'ai été piqué sept fois par un insecte." },
+            { "k": "b", "t": "Aïe ! Tu m'as fait très mal." },
+            { "k": "c", "t": "Pourquoi as-tu cassé mon lit ?" }
+          ]
+        },
+        {
+          "id": "qcmT5",
+          "question": "Pourquoi le géant a-t-il peur à la fin ?",
+          "options": [
+            { "k": "a", "t": "Il pense que l'homme est un fantôme." },
+            { "k": "b", "t": "Il pense que l'homme est incroyablement résistant." },
+            { "k": "c", "t": "Il a vu l'armée de l'homme arriver." }
+          ]
+        }
+      ],
+      "qcmVocab": [
+        {
+          "id": "qcmV1",
+          "question": "Que signifie 'dans la pénombre' ?",
+          "options": [
+            { "k": "a", "t": "En plein soleil." },
+            { "k": "b", "t": "Dans une lumière faible, presque noire." },
+            { "k": "c", "t": "Sous la pluie." }
+          ]
+        },
+        {
+          "id": "qcmV2",
+          "question": "Que veut dire 'ébranla' dans ce texte ?",
+          "options": [
+            { "k": "a", "t": "Fit rire aux éclats." },
+            { "k": "b", "t": "Troubla, fit trembler de peur." },
+            { "k": "c", "t": "Construisit une maison." }
+          ]
+        },
+        {
+          "id": "qcmV3",
+          "question": "Quel est le synonyme de 'vaincre' ?",
+          "options": [
+            { "k": "a", "t": "Gagner ou battre quelqu'un." },
+            { "k": "b", "t": "Perdre un combat." },
+            { "k": "c", "t": "Inviter à manger." }
+          ]
+        },
+        {
+          "id": "qcmV4",
+          "question": "Que fait-on quand on 's'agenouille' ?",
+          "options": [
+            { "k": "a", "t": "On se met sur la pointe des pieds." },
+            { "k": "b", "t": "On se met sur les genoux." },
+            { "k": "c", "t": "On s'allonge sur le dos." }
+          ]
+        },
+        {
+          "id": "qcmV5",
+          "question": "Qu'est-ce qu'une 'épreuve de force' ?",
+          "options": [
+            { "k": "a", "t": "Un test pour voir qui est le plus fort." },
+            { "k": "b", "t": "Un examen de mathématiques." },
+            { "k": "c", "t": "Une promenade en forêt." }
+          ]
+        }
+      ],
+      "relier": [
+        { "id": "rel1", "sujet": "L'homme sage" },
+        { "id": "rel2", "sujet": "Le géant" },
+        { "id": "rel3", "sujet": "L'œuf" },
+        { "id": "rel4", "sujet": "Le tronc d'arbre" },
+        { "id": "rel5", "sujet": "L'insecte" }
+      ],
+      "relierOptions": [
+        { "id": "optA", "text": "Ce que l'homme prétend avoir senti." },
+        { "id": "optB", "text": "Il est dix fois plus gros que l'homme." },
+        { "id": "optC", "text": "Il utilise la ruse pour gagner." },
+        { "id": "optD", "text": "L'objet utilisé pour faire croire au liquide." },
+        { "id": "optE", "text": "L'arme utilisée pour frapper le lit." }
+      ],
+      "verbesATrouver": [
+        "frappe",
+        "dormons",
+        "réfléchis",
+        "écrasent",
+        "ruse"
+      ],
+      "conjugaison": [
+        { "id": "conj1", "phrase": "Le géant (frapper) le lit. (Présent)" },
+        { "id": "conj2", "phrase": "Tu (réfléchir) à une solution. (Présent)" },
+        { "id": "conj3", "phrase": "Nous (dormir) dans la caverne. (Présent)" },
+        { "id": "conj4", "phrase": "Ils (écraser) la pierre. (Présent)" },
+        { "id": "conj5", "phrase": "Je (ruser) pour gagner. (Présent)" }
+      ],
+      "answers": {
+        "vraiFaux": {
+          "vf1": "vrai",
+          "vf2": "faux",
+          "vf3": "faux",
+          "vf4": "vrai",
+          "vf5": "vrai"
+        },
+        "qcmTexte": {
+          "qcmT1": "b",
+          "qcmT2": "b",
+          "qcmT3": "c",
+          "qcmT4": "a",
+          "qcmT5": "b"
+        },
+        "qcmVocab": {
+          "qcmV1": "b",
+          "qcmV2": "b",
+          "qcmV3": "a",
+          "qcmV4": "b",
+          "qcmV5": "a"
+        },
+        "relier": {
+          "rel1": "optC",
+          "rel2": "optB",
+          "rel3": "optD",
+          "rel4": "optE",
+          "rel5": "optA"
+        },
+        "verbesATrouver": [
+          "frappe",
+          "dormons",
+          "réfléchis",
+          "écrasent",
+          "ruse"
+        ],
+        "conjugaison": {
+          "conj1": "frappe",
+          "conj2": "réfléchis",
+          "conj3": "dormons",
+          "conj4": "écrasent",
+          "conj5": "ruse"
+        }
+      }
+    }
+  
+}

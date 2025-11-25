@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "title": "Évaluation : La Fourmi et le Bourdon",
+    "grade": "Grade : 4e/5e",
+    "totalPoints": 25
+  },
+
+  "texte": "Fourmi Annie se prélassait au soleil lorsqu'elle a aperçu Bourdon Bastien occupé à ramasser de la nourriture dans les champs. « Pourquoi ramasses-tu de la nourriture maintenant, Bourdon Bastien? » a demandé Annie. Bourdon Bastien s'est arrêté en plein vol et a regardé Fourmi Annie. « L'hiver approche, Annie. Es-tu bien préparée ? » lui a-t-il demandé.\n\nAnnie a regardé Bastien d'un air incrédule. « Ramasser de la nourriture pour l'hiver maintenant ? Tu veux rire ? Arrête-toi un peu et viens à la fête d'Alice avec moi. » Bourdon Bastien a secoué la tête. « Non, merci. J'ai encore beaucoup de travail à faire. Au revoir, Annie. »\n\nLes jours sont devenus des semaines. Fourmi Annie s'est réveillée un matin et a vu le sol tout recouvert de neige. « Hourra, l'hiver est arrivé! Je vais aller jouer dans la neige après mon déjeuner. » Elle est sortie dehors à la recherche de nourriture et a été horrifiée de constater qu'il n'en restait plus.\n\n« Oh, non! J'ai oublié de ramasser de la nourriture. Qu'est-ce que je vais faire? » a dit Annie en pleurant. Tout à coup, la cloche d'entrée a sonné. Annie a été surprise de voir Bourdon Bastien à la porte.\n\n« Aimerais-tu venir chez moi et partager ma nourriture, Annie? Je sais que tu n'as rien ramassé. Comme j'ai commencé tôt, j'ai un tas de choses à partager », a dit Bastien gentiment.\n\nHonteuse, Fourmi Annie a baissé la tête et a répondu : « Merci, Bourdon Bastien. J'aurais dû t'écouter. Je suis désolée. Laisse-moi nettoyer ta maison cet hiver en échange de la nourriture. »\n\n« Ne t'en fais pas Annie. Viens », a dit Bastien. Ensemble, ils ont marché d'un pas pesant vers la maison de Bastien.",
+
+  "texte2": "1. Nous finissons nos devoirs avant de sortir.\n2. Vous choisissez toujours de bonnes solutions.\n3. Elle grandit très vite.\n4. Nous applaudissons après le spectacle.\n5. Ils réussissent leurs exercices facilement.",
+
+  "sections": {
+
+    "vraiFaux": [
+      { "id": "vf1", "text": "Annie travaillait très fort quand elle a vu Bastien." },
+      { "id": "vf2", "text": "Bourdon Bastien ramassait de la nourriture pour l’hiver." },
+      { "id": "vf3", "text": "Annie avait déjà beaucoup de nourriture pour l’hiver." },
+      { "id": "vf4", "text": "Bastien invite Annie à partager sa nourriture." },
+      { "id": "vf5", "text": "Annie regrette de ne pas avoir écouté Bastien." }
+    ],
+
+    "qcmTexte": [
+      {
+        "id": "qcmT1",
+        "question": "Que faisait Bourdon Bastien au début du texte ?",
+        "options": [
+          { "k": "a", "t": "Il jouait dans les champs." },
+          { "k": "b", "t": "Il ramassait de la nourriture." },
+          { "k": "c", "t": "Il construisait une maison." }
+        ]
+      },
+      {
+        "id": "qcmT2",
+        "question": "Pourquoi Bastien travaille-t-il tôt ?",
+        "options": [
+          { "k": "a", "t": "Pour aller à la fête d'Alice." },
+          { "k": "b", "t": "Parce que l'hiver approche." },
+          { "k": "c", "t": "Parce qu’Annie lui a demandé de l’aider." }
+        ]
+      },
+      {
+        "id": "qcmT3",
+        "question": "Qu’a découvert Annie quand l’hiver est arrivé ?",
+        "options": [
+          { "k": "a", "t": "Qu’elle n’avait plus de nourriture." },
+          { "k": "b", "t": "Que Bastien était parti." },
+          { "k": "c", "t": "Que la fête d'Alice commençait." }
+        ]
+      },
+      {
+        "id": "qcmT4",
+        "question": "Comment Bastien réagit-il quand Annie demande d’aller à la fête ?",
+        "options": [
+          { "k": "a", "t": "Il accepte immédiatement." },
+          { "k": "b", "t": "Il refuse car il a du travail." },
+          { "k": "c", "t": "Il rit et s’envole." }
+        ]
+      },
+      {
+        "id": "qcmT5",
+        "question": "Que propose Annie en échange de la nourriture ?",
+        "options": [
+          { "k": "a", "t": "De partager sa maison." },
+          { "k": "b", "t": "De nettoyer la maison de Bastien." },
+          { "k": "c", "t": "D’aller ramasser de la nourriture maintenant." }
+        ]
+      }
+    ],
+
+    "qcmVocab": [
+      {
+        "id": "qcmV1",
+        "question": "Que signifie 'incrédule' ?",
+        "options": [
+          { "k": "a", "t": "Qui ne croit pas, étonné." },
+          { "k": "b", "t": "Très joyeux." },
+          { "k": "c", "t": "Fatigué et endormi." }
+        ]
+      },
+      {
+        "id": "qcmV2",
+        "question": "Que veut dire 'honteuse' ?",
+        "options": [
+          { "k": "a", "t": "Très fière" },
+          { "k": "b", "t": "Qui a honte" },
+          { "k": "c", "t": "Très en colère" }
+        ]
+      },
+      {
+        "id": "qcmV3",
+        "question": "Quel mot est synonyme de 'partager' ?",
+        "options": [
+          { "k": "a", "t": "Diviser pour donner" },
+          { "k": "b", "t": "Cacher" },
+          { "k": "c", "t": "Détruire" }
+        ]
+      },
+      {
+        "id": "qcmV4",
+        "question": "Que signifie 'pesant' dans le texte ?",
+        "options": [
+          { "k": "a", "t": "Très léger" },
+          { "k": "b", "t": "Lourd, difficile" },
+          { "k": "c", "t": "Rapide et vif" }
+        ]
+      },
+      {
+        "id": "qcmV5",
+        "question": "Quel mot peut remplacer 'préparée' ?",
+        "options": [
+          { "k": "a", "t": "Prête" },
+          { "k": "b", "t": "Effrayée" },
+          { "k": "c", "t": "Affamée" }
+        ]
+      }
+    ],
+
+    "relier": [
+      { "id": "rel1", "sujet": "Fourmi Annie" },
+      { "id": "rel2", "sujet": "Bourdon Bastien" },
+      { "id": "rel3", "sujet": "La neige" },
+      { "id": "rel4", "sujet": "La nourriture" },
+      { "id": "rel5", "sujet": "La maison de Bastien" }
+    ],
+
+    "relierOptions": [
+      { "id": "optA", "text": "Elle n'en a pas ramassé pour l’hiver." },
+      { "id": "optB", "text": "Il en a collecté beaucoup et partage." },
+      { "id": "optC", "text": "Elle recouvre le sol au début de l’hiver." },
+      { "id": "optD", "text": "Ce que Bastien partage avec Annie." },
+      { "id": "optE", "text": "L’endroit où ils vont ensemble." }
+    ],
+
+    "verbesATrouver": [
+      "finissons",
+      "choisissez",
+      "grandit",
+      "applaudissons",
+      "réussissent"
+    ],
+
+    "conjugaison": [
+      { "id": "conj1", "phrase": "Nous (finir) notre repas. (Présent)" },
+      { "id": "conj2", "phrase": "Vous (choisir) un bon livre. (Présent)" },
+      { "id": "conj3", "phrase": "Elle (grandir) vite. (Présent)" },
+      { "id": "conj4", "phrase": "Ils (réussir) leurs tests. (Présent)" },
+      { "id": "conj5", "phrase": "Nous (applaudir) très fort. (Présent)" }
+    ],
+
+    "answers": {
+
+      "vraiFaux": {
+        "vf1": "faux",
+        "vf2": "vrai",
+        "vf3": "faux",
+        "vf4": "vrai",
+        "vf5": "vrai"
+      },
+
+      "qcmTexte": {
+        "qcmT1": "b",
+        "qcmT2": "b",
+        "qcmT3": "a",
+        "qcmT4": "b",
+        "qcmT5": "b"
+      },
+
+      "qcmVocab": {
+        "qcmV1": "a",
+        "qcmV2": "b",
+        "qcmV3": "a",
+        "qcmV4": "b",
+        "qcmV5": "a"
+      },
+
+      "relier": {
+        "rel1": "optA",
+        "rel2": "optB",
+        "rel3": "optC",
+        "rel4": "optD",
+        "rel5": "optE"
+      },
+
+      "verbesATrouver": [
+        "finissons",
+        "choisissez",
+        "grandit",
+        "applaudissons",
+        "réussissent"
+      ],
+
+      "conjugaison": {
+        "conj1": "finissons",
+        "conj2": "choisissez",
+        "conj3": "grandit",
+        "conj4": "réussissent",
+        "conj5": "applaudissons"
+      }
+    }
+  }
+}

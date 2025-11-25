@@ -21,7 +21,10 @@ import MultiplicationSelector from './pages/HSI/2eAnnee/maths/MultiplicationSele
 import AnimalClassifier from './pages/HSI/2eAnnee/science/classification';
 import MultiplicationChallenge from './pages/HSI/2eAnnee/maths/concourMaths';
 import EvaluationFrancais from './pages/HSI/5eAnnee/EvaluationFrancais';
-import MultiplicationChallengeOK from './pages/HSI/2eAnnee/maths/concourMathsOK';
+//import MultiplicationChallengeOK from './pages/HSI/2eAnnee/maths/concourMathsOK';
+//import MultiplicationChallengeOKok from './pages/HSI/2eAnnee/maths/mathsok';
+import MultiplicationChallengeokokok from './pages/HSI/2eAnnee/maths/mathsokavechistoirque';
+import EvaluationFrancaisPro2 from './pages/HSI/5eAnnee/Eval';
 
 const App = () => {
   return (
@@ -43,6 +46,7 @@ const App = () => {
         <Route path="/activites/3e Année/Francais" element={<WeeklyNavigator3 />} />
         <Route path="/activites/4e Année/Francais" element={<WeeklyNavigator4 />} />
         <Route path="/activites/5e Année/Francais" element={<EvaluationFrancais />} />
+        <Route path="/activites/6e Année/Francais" element={<EvaluationFrancaisPro2 />} />
         
         
         
@@ -54,7 +58,7 @@ const App = () => {
         
         <Route path="/concours2" element={< MultiplicationSelector/>} />
         <Route path="/concours" element={<MultiplicationContestJson4 />} />
-        <Route path="/concours3" element={< MultiplicationChallengeOK/>} />
+        <Route path="/concours3" element={< MultiplicationChallengeokokok/>} />
 
       </Routes>
 
