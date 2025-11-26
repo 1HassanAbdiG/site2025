@@ -26,6 +26,9 @@ import EvaluationFrancais from './pages/HSI/5eAnnee/EvaluationFrancais';
 import MultiplicationChallengeokokok from './pages/HSI/2eAnnee/maths/mathsokavechistoirque';
 import EvaluationFrancaisPro2 from './pages/HSI/5eAnnee/Eval';
 
+////import PlantGamesContainer from './Pages/Francais/1eanné/1eannée/plante/planteExer.jsx';
+//import PlantLesson from './Pages/Francais/1eanné/1eannée/plante/PlantLesson.jsx';
+
 const App = () => {
   return (
     <Router>
@@ -54,6 +57,7 @@ const App = () => {
 
         {/* Page contact */}
         <Route path="/contact" element={<MultiplicationChallenge />} />
+        
 
         
         <Route path="/concours2" element={< MultiplicationSelector/>} />
